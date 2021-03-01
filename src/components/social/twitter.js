@@ -37,7 +37,12 @@ const Twitter = () => {
         <div>
             <h3 className="social-title">
                 <div>
-                    <a target="_blank" href="https://twitter.com/sunesportsbr">
+                    <a
+                        target="_blank"
+                        href="https://twitter.com/sunesportsbr"
+                        aria-label="Twitter"
+                        rel="noopener"
+                    >
                         <span>Twitter</span>
                     </a>
                 </div>
@@ -45,18 +50,19 @@ const Twitter = () => {
             <div className="twitter-container">
                 <ul>
                     {placeholder.map((text) => (
-                        <a
-                            target="_blank"
-                            href={text.link}
-                            aria-label="Twitter"
-                        >
-                            <li>
+                        <li key={text.link}>
+                            <a
+                                target="_blank"
+                                href={text.link}
+                                aria-label="Twitter"
+                                rel="noopener"
+                            >
                                 <div className="tweet">
                                     <span>{text['text']}</span>
                                     <span className="date">{text['date']}</span>
                                 </div>
-                            </li>
-                        </a>
+                            </a>
+                        </li>
                     ))}
                 </ul>
             </div>

@@ -34,6 +34,8 @@ const Instagram = () => {
                     <a
                         target="_blank"
                         href="https://instagram.com/sunlightesports"
+                        aria-label="Instagram"
+                        rel="noopener"
                     >
                         <span>Instagram</span>
                     </a>
@@ -46,8 +48,16 @@ const Instagram = () => {
                         target="_blank"
                         href={`https://instagram.com/p/${text.name}`}
                         aria-label="Instagram"
+                        rel="noopener"
+                        key={text.name}
                     >
-                        <img src={text.image} href="" alt="" />
+                        <img
+                            width="300"
+                            height="300"
+                            src={text.image}
+                            href=""
+                            alt=""
+                        />
                     </a>
                 ))}
             </div>

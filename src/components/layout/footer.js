@@ -33,6 +33,7 @@ const Footer = () => {
                                     href="mailto:contato@sunesports.com.br"
                                     className="email-icon"
                                     aria-label="Email"
+                                    rel="noopener"
                                 >
                                     <svg
                                         fill="#000000"
@@ -51,6 +52,7 @@ const Footer = () => {
                                     target="_blank"
                                     href="https://twitter.com/sunesportsbr"
                                     className="twitter-icon"
+                                    rel="noopener"
                                     aria-label="Twitter"
                                 >
                                     <svg
@@ -71,6 +73,7 @@ const Footer = () => {
                                     href="https://instagram.com/sunlightesports"
                                     className="instagram-icon"
                                     aria-label="Instagram"
+                                    rel="noopener"
                                 >
                                     <svg
                                         fill="#000000"
@@ -90,6 +93,7 @@ const Footer = () => {
                                     href="https://www.facebook.com/sunesportsbr/"
                                     className="facebook-icon"
                                     aria-label="Facebook"
+                                    rel="noopener"
                                 >
                                     <svg
                                         fill="#000000"

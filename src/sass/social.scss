@@ -74,9 +74,10 @@
     grid-gap: 8px;
 
     img {
+        object-fit: cover;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        aspect-ratio: 9/16;
     }
 
     @media #{$social-desktop} {
@@ -85,12 +86,6 @@
         grid-template-columns: repeat(2, 35%);
         grid-template-rows: repeat(3, 35%);
         gap: 0.4em;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-        }
     }
 
     @media #{$tablet} {
@@ -99,12 +94,6 @@
         grid-template-columns: repeat(2, 45%);
         grid-template-rows: repeat(3, 45%);
         gap: 0.4em;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-        }
     }
 }
 
