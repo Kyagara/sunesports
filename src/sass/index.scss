@@ -1,0 +1,126 @@
+.hero {
+    color: black;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    min-height: 550px;
+}
+
+.section-social {
+    background-color: #f6f5f5;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .svg {
+        position: absolute;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        mix-blend-mode: overlay;
+    }
+}
+
+.section-discord {
+    min-height: 120vh;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex: 1;
+}
+
+.section-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding-top: 0.4em;
+    vertical-align: top;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fade-in {
+    animation: fadeIn ease-in 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.center {
+    left: 0;
+    margin-top: -100px;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+}
+
+.spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spin .spinBlock {
+    animation: spin-animation 180s linear infinite;
+    transform-origin: center;
+    display: block;
+
+    img {
+        width: 20em;
+    }
+}
+
+@keyframes spin-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@function multiple-box-shadow($n) {
+    $value: '#{random(2000)}px #{random(2000)}px #FFF';
+    @for $i from 2 through $n {
+        $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+    }
+    @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+
+#stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 80s linear infinite;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+#stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+}
