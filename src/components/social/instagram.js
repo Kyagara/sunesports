@@ -45,8 +45,9 @@ const Instagram = () => {
                         className="instagram-link"
                         target="_blank"
                         href={`https://instagram.com/p/${text.name}`}
+                        aria-label="Instagram"
                     >
-                        <img src={text.image} alt="" />
+                        <img src={text.image} href="" alt="" />
                     </a>
                 ))}
             </div>

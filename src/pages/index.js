@@ -46,7 +46,7 @@ const IndexPage = () => {
 
                     <div className="fade-in center spin">
                         <div className="spinBlock">
-                            <img src="sun.svg"></img>
+                            <img src="sun.svg" alt=""></img>
                         </div>
                     </div>
                 </div>
@@ -57,11 +57,7 @@ const IndexPage = () => {
                         ref={socialRef}
                         className="section-social"
                     >
-                        <object
-                            className="svg"
-                            data="sun-section.svg"
-                            type="image/svg+xml"
-                        ></object>
+                        <img className="svg" src="sun-section.svg" alt=""></img>
 
                         <div className="social-section">
                             <div className="marquee">

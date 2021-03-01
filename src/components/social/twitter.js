@@ -45,7 +45,11 @@ const Twitter = () => {
             <div className="twitter-container">
                 <ul>
                     {placeholder.map((text) => (
-                        <a target="_blank" href={text.link}>
+                        <a
+                            target="_blank"
+                            href={text.link}
+                            aria-label="Twitter"
+                        >
                             <li>
                                 <div className="tweet">
                                     <span>{text['text']}</span>
