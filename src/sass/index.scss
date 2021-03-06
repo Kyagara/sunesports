@@ -1,11 +1,42 @@
 .hero {
-    color: black;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     min-height: 550px;
+}
+
+.fade-in {
+    animation: fadeIn ease-in 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sunSpinBlock {
+    overflow: hidden;
+
+    img {
+        width: 20em;
+        animation: spin-animation 180s linear infinite;
+        transform-origin: center;
+        display: block;
+    }
+}
+
+@keyframes spin-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .section-social {
@@ -44,52 +75,6 @@
     text-transform: uppercase;
 }
 
-.fade-in {
-    animation: fadeIn ease-in 3s;
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.center {
-    left: 0;
-    margin-top: -100px;
-    position: absolute;
-    top: 45%;
-    width: 100%;
-}
-
-.spin {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.spin .spinBlock {
-    animation: spin-animation 180s linear infinite;
-    transform-origin: center;
-    display: block;
-
-    img {
-        width: 20em;
-    }
-}
-
-@keyframes spin-animation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 @function multiple-box-shadow($n) {
     $value: '#{random(2000)}px #{random(2000)}px #FFF';
     @for $i from 2 through $n {
@@ -106,7 +91,17 @@ $shadows-medium: multiple-box-shadow(200);
     height: 1px;
     background: transparent;
     box-shadow: $shadows-small;
-    animation: animStar 80s linear infinite;
+    animation: animStar 50s linear infinite;
+
+    &:after {
+        content: ' ';
+        position: absolute;
+        top: 2000px;
+        width: 1px;
+        height: 1px;
+        background: transparent;
+        box-shadow: $shadows-small;
+    }
 }
 
 @keyframes animStar {
@@ -123,4 +118,14 @@ $shadows-medium: multiple-box-shadow(200);
     height: 2px;
     background: transparent;
     box-shadow: $shadows-medium;
+
+    &:after {
+        content: ' ';
+        position: absolute;
+        top: 2000px;
+        width: 2px;
+        height: 2px;
+        background: transparent;
+        box-shadow: $shadows-medium;
+    }
 }

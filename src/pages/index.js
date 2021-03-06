@@ -40,14 +40,11 @@ const IndexPage = () => {
     return (
         <>
             <Layout>
+                <div id="stars"></div>
+                <div id="stars2"></div>
                 <div id="inicio" ref={inicioRef} className="hero">
-                    <div id="stars"></div>
-                    <div id="stars2"></div>
-
-                    <div className="fade-in center spin">
-                        <div className="spinBlock">
-                            <img src="sun.svg" alt=""></img>
-                        </div>
+                    <div className="fade-in sunSpinBlock">
+                        <img src="sun.svg" alt=""></img>
                     </div>
                 </div>
 

@@ -3,10 +3,10 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
+        "start": "next start",
         "dev": "next dev",
-        "build": "next build",
-        "export": "next export",
-        "start": "next start"
+        "build": "node ./social.js && next build && next export",
+        "export": "next build && next export"
     },
     "dependencies": {
         "axios": "^0.21.1",

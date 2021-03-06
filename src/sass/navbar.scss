@@ -21,14 +21,16 @@ header {
 }
 
 .navbar {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 0.2fr auto 1fr;
+    -ms-grid-columns: 1fr auto 1fr;
+    grid-template-columns: auto auto 1fr;
     align-items: center;
 }
 
 .navbar-logo {
     cursor: pointer;
-    margin-left: 9%;
+    margin-left: 4%;
     padding: 0.6em;
 
     img {
@@ -59,15 +61,31 @@ header {
 }
 
 @media #{$mid-point} {
+    .navbar {
+        -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+    }
+
     .navbar-toggle {
         display: inline;
-        position: absolute;
-        justify-self: end;
+        justify-self: right;
+        margin-right: 0.3em;
         font-size: 2em;
-        margin-right: 3.4%;
+    }
+
+    .navbar-logo {
+        margin-left: 0.4em;
+    }
+
+    .dummy {
+        display: none;
     }
 
     .navbar-links {
+        display: none;
+    }
+
+    .navbar-menu {
         display: none;
     }
 
@@ -82,27 +100,29 @@ header {
         }
 
         .navbar-logo {
-            justify-self: start;
             margin-left: 0.4em;
         }
 
         .navbar-toggle {
-            display: inline;
-            position: relative;
-            margin-right: 6%;
+            justify-self: right;
+            margin-right: 0.3em;
         }
 
         .navbar-menu {
             display: table;
-            margin-right: 8%;
-            margin-bottom: 1em;
+            margin-right: 1.4em;
+        }
+
+        .dummy {
+            display: inline;
         }
 
         .navbar-links {
             display: table;
-            width: 100%;
             text-align: right;
-            margin: 1em 0.2em;
+            width: 100%;
+            margin-top: 1em;
+            margin-bottom: 1em;
         }
     }
 }

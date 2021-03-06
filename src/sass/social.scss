@@ -69,30 +69,25 @@
 .instagram-container {
     display: grid;
     grid-template-columns: repeat(3, 30%);
-    grid-template-rows: repeat(2, 30%);
     justify-content: center;
     grid-gap: 8px;
 
     img {
-        object-fit: cover;
+        height: auto;
         width: 100%;
-        height: 100%;
-        aspect-ratio: 9/16;
     }
 
     @media #{$social-desktop} {
         margin: 0;
         display: grid;
-        grid-template-columns: repeat(2, 35%);
-        grid-template-rows: repeat(3, 35%);
+        grid-template-columns: repeat(3, 30%);
         gap: 0.4em;
     }
 
-    @media #{$tablet} {
+    @media #{$social-img} {
         margin: 0;
         display: grid;
         grid-template-columns: repeat(2, 45%);
-        grid-template-rows: repeat(3, 45%);
         gap: 0.4em;
     }
 }

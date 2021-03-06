@@ -42,7 +42,7 @@ const Navbar = () => {
                 <a className="navbar-toggle" onClick={Toggle}>
                     ☰
                 </a>
-                <div></div>
+                <div className="dummy"></div>
                 <ul className="navbar-menu">
                     <li className="navbar-links">
                         <Link href="/#inicio" replace>

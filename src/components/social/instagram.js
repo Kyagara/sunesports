@@ -44,7 +44,6 @@ const Instagram = () => {
             <div className="instagram-container">
                 {placeholder.map((text) => (
                     <a
-                        className="instagram-link"
                         target="_blank"
                         href={`https://instagram.com/p/${text.name}`}
                         aria-label="Instagram"
@@ -52,8 +51,8 @@ const Instagram = () => {
                         key={text.name}
                     >
                         <img
-                            width="300"
-                            height="300"
+                            height="300px"
+                            width="300px"
                             src={text.image}
                             href=""
                             alt=""
