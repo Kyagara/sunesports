@@ -1,10 +1,11 @@
-import '../css/screen.scss'
-import { useRouter } from 'next/router'
 import React from 'react'
+import { useRouter } from 'next/router'
 import { DefaultSeo } from 'next-seo'
+import '../css/screen.scss'
 
 function SunlightApp({ Component, pageProps }) {
     const router = useRouter()
+
     return (
         <React.Fragment>
             <DefaultSeo
@@ -28,7 +29,7 @@ function SunlightApp({ Component, pageProps }) {
                     handle: '@sunesportsbr',
                     cardType: 'summary',
                 }}
-            />
+            ></DefaultSeo>
 
             <Component {...pageProps} key={router.route} />
         </React.Fragment>

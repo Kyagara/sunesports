@@ -1,4 +1,9 @@
 module.exports = {
+    exportPathMap: async () => {
+        return {
+            '/': { page: '/' },
+        }
+    },
     webpack: (config) => {
         return {
             ...config,
@@ -9,6 +14,5 @@ module.exports = {
     },
     experimental: {
         optimizeFonts: true,
-        optimizeImages: true,
     },
 }

@@ -1,0 +1,31 @@
+.oops {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background: #dadada;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        img {
+            max-width: 60%;
+            max-height: 60vh;
+            mix-blend-mode: overlay;
+
+            @media #{$tablet} {
+                max-width: 80%;
+                max-height: 80vh;
+                mix-blend-mode: overlay;
+            }
+        }
+    }
+}

@@ -42,9 +42,15 @@ const IndexPage = () => {
             <Layout>
                 <div id="stars"></div>
                 <div id="stars2"></div>
+
                 <div id="inicio" ref={inicioRef} className="hero">
                     <div className="fade-in sunSpinBlock">
-                        <img src="sun.svg" alt=""></img>
+                        <img
+                            height="100%"
+                            width="100%"
+                            src="sun.svg"
+                            alt=""
+                        ></img>
                     </div>
                 </div>
 
