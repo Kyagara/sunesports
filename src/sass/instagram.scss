@@ -1,0 +1,25 @@
+.instagram-container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    justify-content: center;
+    grid-gap: 8px;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    @media #{$social-desktop} {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        gap: 0.4em;
+    }
+
+    @media #{$social-img} {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        gap: 0.4em;
+    }
+}

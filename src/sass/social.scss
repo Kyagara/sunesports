@@ -1,9 +1,8 @@
-.social-section {
+.social {
     h3 {
         text-align: center;
         text-transform: uppercase;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
+        font-family: 'Lato', sans-serif;
     }
 
     display: flex;
@@ -28,70 +27,6 @@
     }
 }
 
-.twitter-container {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-
-    a {
-        color: inherit;
-    }
-
-    li {
-        display: flex;
-        flex-direction: column;
-        max-width: 24em;
-        background: linear-gradient(to right, #1da1f2, #1da1f2);
-        background-repeat: no-repeat;
-        background-size: 0 100%;
-        transition: color 2s ease;
-
-        transition: background-size 0.4s 0s;
-    }
-
-    li:hover {
-        color: white;
-        background-size: 100% 100%;
-    }
-
-    .tweet {
-        display: flex;
-        flex-direction: column;
-        padding: 1em;
-        margin-bottom: 1em;
-
-        .date {
-            margin-top: 0.6em;
-            font-size: 0.8em;
-        }
-    }
-}
-
-.instagram-container {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    justify-content: center;
-    grid-gap: 8px;
-
-    img {
-        height: auto;
-        width: 100%;
-    }
-
-    @media #{$social-desktop} {
-        margin: 0;
-        display: grid;
-        grid-template-columns: repeat(3, 30%);
-        gap: 0.4em;
-    }
-
-    @media #{$social-img} {
-        margin: 0;
-        display: grid;
-        grid-template-columns: repeat(2, 45%);
-        gap: 0.4em;
-    }
-}
-
 .social-title {
     font-size: 2em;
 
@@ -113,15 +48,6 @@
     }
 }
 
-@keyframes marquee {
-    0% {
-        transform: translatex(0%);
-    }
-    100% {
-        transform: translatex(-100%);
-    }
-}
-
 .marquee {
     display: block;
     overflow: hidden;
@@ -139,8 +65,18 @@
         color: black;
         display: inline-block;
         font-size: 0.9em;
+        margin-left: 0.5em;
         line-height: 1em;
         letter-spacing: 0.15em;
         text-transform: uppercase;
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translatex(0%);
+    }
+    100% {
+        transform: translatex(-100%);
     }
 }

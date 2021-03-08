@@ -31,8 +31,8 @@ const Navbar = () => {
                 <div className="navbar-logo">
                     <Link href="/">
                         <img
-                            width="104"
-                            height="38"
+                            width="100"
+                            height="100"
                             src="sun.svg"
                             alt="Sunlight Esports"
                         />

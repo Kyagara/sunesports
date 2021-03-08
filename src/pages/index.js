@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
-import Twitter from '../components/social/twitter'
-import Instagram from '../components/social/Instagram'
+import Social from '../components/social'
+import Discord from '../components/Discord'
 import { useRef, useEffect } from 'react'
 
 const IndexPage = () => {
@@ -56,35 +56,16 @@ const IndexPage = () => {
                     >
                         <img className="svg" src="sun-section.svg" alt=""></img>
 
-                        <div className="social-section">
-                            <div className="marquee">
-                                <span>
-                                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                                    #SUN #SUN #SUN
-                                </span>
-                                <span>
-                                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                                    #SUN #SUN #SUN
-                                </span>
-                            </div>
-                            <div className="social-container">
-                                <Instagram />
-                                <Twitter />
-                            </div>
-                        </div>
+                        <Social />
                     </section>
 
                     <section
                         id="discord"
                         ref={discordRef}
                         className="section-discord"
-                    ></section>
+                    >
+                        <Discord />
+                    </section>
                 </div>
             </Layout>
         </>

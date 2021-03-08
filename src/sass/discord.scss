@@ -1,0 +1,43 @@
+.discord-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.discord-title {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    padding-top: 0.4em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.discord-paragraph {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 0 1.4em;
+    font-size: 1.4em;
+    z-index: 1;
+    text-align: center;
+}
+
+.discord-invite {
+    background-color: #7289da;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border: none;
+    color: #ffffff;
+    font-size: 1em;
+    padding: 1em 1.4em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1em;
+    cursor: pointer;
+    z-index: 1;
+}
