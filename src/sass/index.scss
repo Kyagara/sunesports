@@ -34,7 +34,7 @@
     @return unquote($value);
 }
 
-$shadows-small: multiple-box-shadow(700);
+$shadows-small: multiple-box-shadow(400);
 $shadows-medium: multiple-box-shadow(200);
 
 #stars {
@@ -43,6 +43,7 @@ $shadows-medium: multiple-box-shadow(200);
     background: transparent;
     box-shadow: $shadows-small;
     animation: animStar 50s linear infinite;
+    will-change: transform;
 
     &:after {
         content: ' ';
@@ -57,9 +58,13 @@ $shadows-medium: multiple-box-shadow(200);
 
 @keyframes animStar {
     from {
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
         transform: translateY(0px);
     }
     to {
+        -webkit-transform: translateY(-2000px);
+        -ms-transform: translateY(-2000px);
         transform: translateY(-2000px);
     }
 }

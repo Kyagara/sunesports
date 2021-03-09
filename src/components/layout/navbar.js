@@ -17,12 +17,10 @@ const Navbar = () => {
     }
 
     const handleScroll = () => {
-        setInterval(function () {
-            var header = document.getElementById('mainHeader')
-            var scrollTop =
-                document.documentElement.scrollTop || document.body.scrollTop
-            header.classList.toggle('header-background', scrollTop >= 100)
-        }, 100)
+        var header = document.getElementById('mainHeader')
+        var scrollTop =
+            document.documentElement.scrollTop || document.body.scrollTop
+        header.classList.toggle('header-background', scrollTop >= 100)
     }
 
     return (
