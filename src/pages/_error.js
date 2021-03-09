@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-function Error() {
+function Error({ statusCode }) {
     return (
         <div className="oops">
             <div>
@@ -11,7 +11,7 @@ function Error() {
                     alt=""
                 ></img>
 
-                <p>${statusCode} :/</p>
+                <p>{statusCode} :/</p>
 
                 <Link href="/">
                     <a>Volte para o sol!</a>
