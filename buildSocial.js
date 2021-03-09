@@ -116,7 +116,7 @@ async function Instagram() {
     index = 0
     let posts = []
 
-    console.log("Salvando imagens do Instagram em './instagram/'.")
+    console.log("Salvando imagens do Instagram em './public/instagram/'.")
     responseArr.forEach(async function (obj) {
         index += 1
 

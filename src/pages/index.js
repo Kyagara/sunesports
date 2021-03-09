@@ -5,7 +5,7 @@ import { useRef, useEffect } from 'react'
 
 import Layout from '../components/layout'
 import Social from '../components/social'
-import Discord from '../components/Discord'
+import Discord from '../components/discord'
 
 const IndexPage = ({ twitter, instagram }) => {
     const inicioRef = useRef(null)
