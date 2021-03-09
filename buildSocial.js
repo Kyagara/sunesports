@@ -116,14 +116,14 @@ async function Instagram() {
     index = 0
     let posts = []
 
-    console.log("Salvando imagens do Instagram em './public/instagram/'.")
+    console.log("Salvando imagens do Instagram em './instagram/'.")
     responseArr.forEach(async function (obj) {
         index += 1
 
-        let outputImage = `./instagram/${index}.webp`
+        let outputImage = `./public/instagram/${index}.webp`
 
         let post = {
-            image: outputImage,
+            image: `./instagram/${index}.webp`,
             id: obj.node.shortcode,
             link: `https://www.instagram.com/p/${obj.node.shortcode}`,
         }
