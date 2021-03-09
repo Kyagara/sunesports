@@ -27,7 +27,7 @@ const Navbar = () => {
         <header id="mainHeader">
             <nav className="navbar">
                 <div className="navbar-logo">
-                    <Link href="/">
+                    <Link href="/#inicio">
                         <img
                             width="100"
                             height="100"
