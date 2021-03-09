@@ -73,7 +73,7 @@ const Social = ({ instagram, twitter }) => {
                                         rel="noopener"
                                     >
                                         <div className="tweet">
-                                            <span>{tweet.text}</span>
+                                            <p>{tweet.text}</p>
                                             <span className="date">
                                                 {tweet.date}
                                             </span>

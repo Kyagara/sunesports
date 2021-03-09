@@ -58,24 +58,18 @@ const IndexPage = ({ twitter, instagram }) => {
                     </div>
                 </div>
 
-                <div>
-                    <section
-                        id="social"
-                        ref={socialRef}
-                        className="section-social"
-                    >
-                        <img className="svg" src="sun-section.svg" alt=""></img>
-                        <Social twitter={twitter} instagram={instagram} />
-                    </section>
+                <section id="social" ref={socialRef} className="section-social">
+                    <img className="svg" src="sun-section.svg" alt=""></img>
+                    <Social twitter={twitter} instagram={instagram} />
+                </section>
 
-                    <section
-                        id="discord"
-                        ref={discordRef}
-                        className="section-discord"
-                    >
-                        <Discord />
-                    </section>
-                </div>
+                <section
+                    id="discord"
+                    ref={discordRef}
+                    className="section-discord"
+                >
+                    <Discord />
+                </section>
             </Layout>
         </>
     )

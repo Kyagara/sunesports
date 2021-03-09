@@ -74,6 +74,7 @@ async function Twitter() {
         'https://twitter.com/sunesportsbr/status/1368253463914811396',
         'https://twitter.com/sunesportsbr/status/1368654731317571586',
         'https://twitter.com/sunesportsbr/status/1365770300818923528',
+        'https://twitter.com/sunesportsbr/status/1368641511995367428',
     ]
 
     tweets = tweets.filter(function (val) {
