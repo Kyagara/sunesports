@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 function Error() {
     return (
         <div className="oops">
@@ -10,6 +12,10 @@ function Error() {
                 ></img>
 
                 <p>404 :/</p>
+
+                <Link href="/">
+                    <a>Volte para o sol!</a>
+                </Link>
             </div>
         </div>
     )

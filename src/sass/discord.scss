@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     flex: 1;
+    z-index: 1;
 }
 
 .discord-title {
@@ -20,10 +21,18 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: white;
-    padding: 0 1.4em;
     font-size: 1.4em;
-    z-index: 1;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
     text-align: center;
+
+    @media #{$tablet} {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
 }
 
 .discord-invite {
@@ -33,11 +42,10 @@
     border: none;
     color: #ffffff;
     font-size: 1em;
-    padding: 1em 1.4em;
+    padding: 1em;
+    margin-bottom: 3em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin-top: 1em;
     cursor: pointer;
-    z-index: 1;
 }

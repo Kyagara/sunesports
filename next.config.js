@@ -5,12 +5,11 @@ module.exports = {
         }
     },
     webpack: (config) => {
-        return {
-            ...config,
-            node: {
-                fs: 'empty',
-            },
+        config.node = {
+            fs: 'empty',
         }
+
+        return config
     },
     experimental: {
         optimizeFonts: true,

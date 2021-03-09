@@ -8,19 +8,13 @@ const Footer = () => {
                     <div className="left-ul">
                         <ul>
                             <li>
-                                <Link href="/" replace>
-                                    Inicio
-                                </Link>
+                                <Link href="/#inicio">Inicio</Link>
                             </li>
                             <li>
-                                <Link href="/#social" replace>
-                                    Redes Sociais
-                                </Link>
+                                <Link href="/#social">Redes Sociais</Link>
                             </li>
                             <li>
-                                <Link href="/#discord" replace>
-                                    Discord
-                                </Link>
+                                <Link href="/#discord">Discord</Link>
                             </li>
                         </ul>
                     </div>

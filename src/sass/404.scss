@@ -1,6 +1,5 @@
 .oops {
     font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -8,6 +7,19 @@
     align-content: center;
     height: 100vh;
     background: #dadada;
+
+    p {
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: orange;
+        }
+    }
 
     div {
         display: flex;

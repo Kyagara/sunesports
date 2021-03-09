@@ -45,19 +45,19 @@ const Navbar = () => {
                 <div className="dummy"></div>
                 <ul className="navbar-menu">
                     <li className="navbar-links">
-                        <Link href="/#inicio" replace>
+                        <Link href="/#inicio">
                             <a>Inicio</a>
                         </Link>
                     </li>
 
                     <li className="navbar-links">
-                        <Link href="/#social" replace>
+                        <Link href="/#social">
                             <a>Redes Sociais</a>
                         </Link>
                     </li>
 
                     <li className="navbar-links">
-                        <Link href="/#discord" replace>
+                        <Link href="/#discord">
                             <a>Discord</a>
                         </Link>
                     </li>

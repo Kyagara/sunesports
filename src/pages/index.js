@@ -1,9 +1,13 @@
+import fs from 'fs'
+import path from 'path'
+import yaml from 'js-yaml'
+import { useRef, useEffect } from 'react'
+
 import Layout from '../components/layout'
 import Social from '../components/social'
 import Discord from '../components/Discord'
-import { useRef, useEffect } from 'react'
 
-const IndexPage = () => {
+const IndexPage = ({ twitter, instagram }) => {
     const inicioRef = useRef(null)
     const socialRef = useRef(null)
     const discordRef = useRef(null)
@@ -61,8 +65,7 @@ const IndexPage = () => {
                         className="section-social"
                     >
                         <img className="svg" src="sun-section.svg" alt=""></img>
-
-                        <Social />
+                        <Social twitter={twitter} instagram={instagram} />
                     </section>
 
                     <section
@@ -76,6 +79,24 @@ const IndexPage = () => {
             </Layout>
         </>
     )
+}
+
+export const getStaticProps = async () => {
+    const postsDirectory = path.join(process.cwd())
+
+    const twitterPath = path.join(postsDirectory, 'src/data/instagram.yml')
+    const instagramPath = path.join(postsDirectory, 'src/data/twitter.yml')
+
+    const twitterFile = fs.readFileSync(twitterPath, 'utf8')
+    const instagramFile = fs.readFileSync(instagramPath, 'utf8')
+
+    // Web Development is my passion
+    const twitter = yaml.load(instagramFile)
+    const instagram = yaml.load(twitterFile)
+
+    return {
+        props: { twitter, instagram },
+    }
 }
 
 export default IndexPage

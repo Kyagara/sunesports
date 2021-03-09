@@ -62,6 +62,7 @@ async function Twitter() {
         let tweet = {
             text: tweetStr,
             date: dateStr,
+            id: obj.id_str,
             link: `https://twitter.com/sunesportsbr/status/${obj.id_str}`,
         }
 
@@ -70,6 +71,8 @@ async function Twitter() {
 
     const removeStr = [
         'https://twitter.com/sunesportsbr/status/1365633399772352517',
+        'https://twitter.com/sunesportsbr/status/1368253463914811396',
+        'https://twitter.com/sunesportsbr/status/1368654731317571586',
         'https://twitter.com/sunesportsbr/status/1365770300818923528',
     ]
 
@@ -78,7 +81,7 @@ async function Twitter() {
     })
 
     console.log("Salvando Tweets em './src/data/twitter.yml'.")
-    YamlParser(tweets, './src/data/twitter.yml')
+    YamlParser(tweets.slice(0, 4), './src/data/twitter.yml')
 
     Instagram()
 }
@@ -120,6 +123,7 @@ async function Instagram() {
 
         let post = {
             image: outputImage,
+            id: obj.node.shortcode,
             link: `https://www.instagram.com/p/${obj.node.shortcode}`,
         }
 
@@ -127,8 +131,9 @@ async function Instagram() {
 
         await ImageDownload(obj.node.thumbnail_src, outputImage)
     })
+
     console.log("Salvando posts do Instagram em './src/data/instagram.yml'.")
-    YamlParser(posts, './src/data/instagram.yml')
+    YamlParser(posts.slice(0, 6), './src/data/instagram.yml')
 }
 
 async function ImageDownload(url, downloadPath) {
