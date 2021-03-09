@@ -119,7 +119,7 @@ async function Instagram() {
     responseArr.forEach(async function (obj) {
         index += 1
 
-        let outputImage = `./public/instagram/${index}.webp`
+        let outputImage = `./instagram/${index}.webp`
 
         let post = {
             image: outputImage,
