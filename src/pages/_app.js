@@ -11,6 +11,7 @@ function SunlightApp({ Component, pageProps }) {
                 locale="pt_BR"
                 canonical="https://sunesports.com.br/"
                 openGraph={{
+                    type: 'website',
                     url: 'https://sunesports.com.br/',
                     title: 'Sunlight Esports',
                     site_name: 'Sunlight Esports',
@@ -19,14 +20,11 @@ function SunlightApp({ Component, pageProps }) {
                     images: [
                         {
                             url: 'https://sunesports.com.br/sun.svg',
-                            width: 1000,
-                            height: 1000,
-                            alt: 'Sunlight Esports',
                         },
                     ],
                 }}
                 twitter={{
-                    handle: '@sunesportsbr',
+                    site: '@sunesportsbr',
                     cardType: 'summary',
                     title: 'Sunlight Esports',
                     description:
