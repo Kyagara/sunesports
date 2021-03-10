@@ -16,17 +16,17 @@ function SunlightApp({ Component, pageProps }) {
                     title: 'Sunlight Esports',
                     site_name: 'Sunlight Esports',
                     description:
-                        'A SUN é um time de Esports que está atualmente competindo em League of Legends.',
+                        'A SUN é uma organização de Esports brasileira que atualmente compete em League of Legends.',
                     images: [
                         {
-                            url: 'http://localhost:3000/card.png',
-                            width: '400',
-                            height: '400',
+                            url: 'https://sunesports.com.br/sun.svg',
+                            width: '2000',
+                            height: '2000',
                         },
                         {
-                            url: 'https://sunesports.com.br/sun.svg',
-                            width: '1600',
-                            height: '630',
+                            url: 'https://sunesports.com.br/card.png',
+                            width: '400',
+                            height: '400',
                         },
                     ],
                 }}
@@ -35,7 +35,7 @@ function SunlightApp({ Component, pageProps }) {
                     cardType: 'summary',
                     title: 'Sunlight Esports',
                     description:
-                        'A SUN é um time de Esports que está atualmente competindo em League of Legends.',
+                        'A SUN é uma organização de Esports brasileira que atualmente compete em League of Legends.',
                 }}
             ></DefaultSeo>
 
