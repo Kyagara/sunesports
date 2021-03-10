@@ -12,6 +12,7 @@
     color: white;
     font-weight: bold;
     font-size: 3em;
+    margin-bottom: 2em;
     padding-top: 0.4em;
     text-align: center;
     text-transform: uppercase;
@@ -22,9 +23,6 @@
     font-weight: bold;
     color: white;
     font-size: 1.4em;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    padding-bottom: 1em;
     padding-left: 5em;
     padding-right: 5em;
     text-align: center;
@@ -36,6 +34,8 @@
 }
 
 .discord-invite {
+    margin-top: 3em;
+    padding-top: 1em;
     background-color: #7289da;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -48,4 +48,11 @@
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 }

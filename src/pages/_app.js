@@ -7,7 +7,7 @@ function SunlightApp({ Component, pageProps }) {
         <React.Fragment>
             <DefaultSeo
                 title="Sunlight Esports"
-                description="A SUN é um time de Esports que está atualmente competindo em League of Legends."
+                description="A SUN é uma organização de Esports brasileira que atualmente compete em League of Legends."
                 locale="pt_BR"
                 canonical="https://sunesports.com.br/"
                 openGraph={{
@@ -19,7 +19,14 @@ function SunlightApp({ Component, pageProps }) {
                         'A SUN é um time de Esports que está atualmente competindo em League of Legends.',
                     images: [
                         {
+                            url: 'http://localhost:3000/card.png',
+                            width: '400',
+                            height: '400',
+                        },
+                        {
                             url: 'https://sunesports.com.br/sun.svg',
+                            width: '1600',
+                            height: '630',
                         },
                     ],
                 }}

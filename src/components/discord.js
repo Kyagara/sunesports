@@ -7,8 +7,11 @@ const Discord = () => {
                 <span className="discord-paragraph">
                     O servidor de Discord da Sunlight Esports conta com mais de
                     250 membros jogando diversos jogos, conversando sobre
-                    diversos assuntos, assistindo os jogos da #SUN, bots de
-                    rádio e muito mais. Vem para #SUN Community!
+                    diversos assuntos, assistindo os jogos da SUN, ouvindo
+                    juntos as rádios da SUN e muito mais.
+                </span>
+                <span className="discord-paragraph">
+                    Venha para a #SUN Community!
                 </span>
 
                 <a

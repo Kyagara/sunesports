@@ -14,13 +14,14 @@
         background-repeat: no-repeat;
         background-size: 0 100%;
         transition: color 2s ease;
-
         transition: background-size 0.4s 0s;
-    }
 
-    li:hover {
-        color: white;
-        background-size: 100% 100%;
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                color: white;
+                background-size: 100% 100%;
+            }
+        }
     }
 
     .tweet {
