@@ -32,10 +32,12 @@ function SunlightApp({ Component, pageProps }) {
                     description:
                         'A SUN é uma organização de Esports brasileira que atualmente compete em League of Legends.',
                 }}
-                additionalMetaTags={{
-                    name: 'theme-color',
-                    content: '#FF9400',
-                }}
+                additionalMetaTags={[
+                    {
+                        name: 'theme-color',
+                        content: '#FF9400',
+                    },
+                ]}
             ></DefaultSeo>
 
             <Component {...pageProps} />
