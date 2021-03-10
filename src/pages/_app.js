@@ -19,11 +19,6 @@ function SunlightApp({ Component, pageProps }) {
                         'A SUN é uma organização de Esports brasileira que atualmente compete em League of Legends.',
                     images: [
                         {
-                            url: 'https://sunesports.com.br/sun.svg',
-                            width: '2000',
-                            height: '2000',
-                        },
-                        {
                             url: 'https://sunesports.com.br/card.png',
                             width: '400',
                             height: '400',
@@ -36,6 +31,10 @@ function SunlightApp({ Component, pageProps }) {
                     title: 'Sunlight Esports',
                     description:
                         'A SUN é uma organização de Esports brasileira que atualmente compete em League of Legends.',
+                }}
+                additionalMetaTags={{
+                    name: 'theme-color',
+                    content: '#FF9400',
                 }}
             ></DefaultSeo>
 
