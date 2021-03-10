@@ -32,6 +32,9 @@ function SunlightApp({ Component, pageProps }) {
                     description:
                         'A SUN é uma organização de Esports brasileira que atualmente compete em League of Legends.',
                 }}
+                facebook={{
+                    appId: '880911899427549',
+                }}
                 additionalMetaTags={[
                     {
                         name: 'theme-color',
