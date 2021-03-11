@@ -1,5 +1,5 @@
 import React from 'react'
-import { DefaultSeo } from 'next-seo'
+import { DefaultSeo, LogoJsonLd } from 'next-seo'
 import '../css/screen.scss'
 
 function SunlightApp({ Component, pageProps }) {
@@ -32,9 +32,6 @@ function SunlightApp({ Component, pageProps }) {
                     description:
                         'A SUN é uma organização de Esports brasileira que atualmente compete em League of Legends.',
                 }}
-                facebook={{
-                    appId: '880911899427549',
-                }}
                 additionalMetaTags={[
                     {
                         name: 'theme-color',
@@ -42,7 +39,10 @@ function SunlightApp({ Component, pageProps }) {
                     },
                 ]}
             ></DefaultSeo>
-
+            <LogoJsonLd
+                logo="https://sunesports.com.br/sun.svg"
+                url="https://sunesports.com.br"
+            />
             <Component {...pageProps} />
         </React.Fragment>
     )
