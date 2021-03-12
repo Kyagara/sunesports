@@ -1,4 +1,17 @@
+#    _  _   ____  _   _ _   _
+#  _| || |_/ ___|| | | | \ | |
+# |_  ..  _\___ \| | | |  \| |
+# |_  ..  _|___) | |_| | |\  |
+#   |_||_| |____/ \___/|_| \_|
+#
+# o/
+
+
 User-agent: *
 Allow: /
+
+Disallow: /instagram/
+Disallow: /sun-black.svg
+Disallow: /sun-section.svg
 
 Sitemap: https://sunesports.com.br/sitemap.xml

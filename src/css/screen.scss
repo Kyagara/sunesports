@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
 @import '../sass/variables';
 @import '../sass/elements';
-@import '../sass/navbar';
-@import '../sass/footer';
-@import '../sass/index';
-@import '../sass/hero';
-@import '../sass/social';
-@import '../sass/twitter';
-@import '../sass/instagram';
-@import '../sass/discord';
-@import '../sass/404';
+
+@import '../sass/layout/navbar';
+@import '../sass/layout/footer';
+
+@import '../sass/pages/index';
+@import '../sass/pages/404';
+
+@import '../sass/sections/inicio';
+@import '../sass/sections/social';
+@import '../sass/sections/discord';
+
+@import '../sass/components/twitter';
+@import '../sass/components/instagram';

@@ -1,5 +1,5 @@
 import React from 'react'
-import { DefaultSeo, LogoJsonLd } from 'next-seo'
+import { DefaultSeo, SocialProfileJsonLd, LogoJsonLd } from 'next-seo'
 import '../css/screen.scss'
 
 function SunlightApp({ Component, pageProps }) {
@@ -38,11 +38,24 @@ function SunlightApp({ Component, pageProps }) {
                         content: '#FF9400',
                     },
                 ]}
-            ></DefaultSeo>
+            />
+
+            <SocialProfileJsonLd
+                type="Organization"
+                name="Sunlight Esports"
+                url="https://sunesports.com.br"
+                sameAs={[
+                    'https://twitter.com/sunesportsbr',
+                    'https://www.instagram.com/sunlightesports',
+                    'https://www.facebook.com/sunesportsbr',
+                ]}
+            />
+
             <LogoJsonLd
                 logo="https://sunesports.com.br/sun.svg"
                 url="https://sunesports.com.br"
             />
+
             <Component {...pageProps} />
         </React.Fragment>
     )

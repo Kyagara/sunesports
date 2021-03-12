@@ -64,7 +64,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     target="_blank"
-                                    href="https://instagram.com/sunlightesports"
+                                    href="https://www.instagram.com/sunlightesports"
                                     className="instagram-icon"
                                     aria-label="Instagram"
                                     rel="noopener"
@@ -84,7 +84,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     target="_blank"
-                                    href="https://www.facebook.com/sunesportsbr/"
+                                    href="https://www.facebook.com/sunesportsbr"
                                     className="facebook-icon"
                                     aria-label="Facebook"
                                     rel="noopener"

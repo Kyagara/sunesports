@@ -4,8 +4,10 @@ import yaml from 'js-yaml'
 import { useRef, useEffect } from 'react'
 
 import Layout from '../components/layout'
-import Social from '../components/social'
-import Discord from '../components/discord'
+
+import Inicio from '../components/sections/inicio'
+import Social from '../components/sections/social'
+import Discord from '../components/sections/discord'
 
 const IndexPage = ({ twitter, instagram }) => {
     const inicioRef = useRef(null)
@@ -47,16 +49,9 @@ const IndexPage = ({ twitter, instagram }) => {
                 <div id="stars"></div>
                 <div id="stars2"></div>
 
-                <div id="inicio" ref={inicioRef} className="hero">
-                    <div className="fade-in sunSpinBlock">
-                        <img
-                            height="100%"
-                            width="100%"
-                            src="sun.svg"
-                            alt=""
-                        ></img>
-                    </div>
-                </div>
+                <section id="inicio" ref={inicioRef} className="section-inicio">
+                    <Inicio />
+                </section>
 
                 <section id="social" ref={socialRef} className="section-social">
                     <img className="svg" src="sun-section.svg" alt=""></img>
@@ -78,15 +73,15 @@ const IndexPage = ({ twitter, instagram }) => {
 export const getStaticProps = async () => {
     const postsDirectory = path.join(process.cwd())
 
-    const twitterPath = path.join(postsDirectory, 'src/data/instagram.yml')
-    const instagramPath = path.join(postsDirectory, 'src/data/twitter.yml')
+    const twitterPath = path.join(postsDirectory, 'src/data/twitter.yml')
+    const instagramPath = path.join(postsDirectory, 'src/data/instagram.yml')
 
     const twitterFile = fs.readFileSync(twitterPath, 'utf8')
     const instagramFile = fs.readFileSync(instagramPath, 'utf8')
 
     // Web Development is my passion
-    const twitter = yaml.load(instagramFile)
-    const instagram = yaml.load(twitterFile)
+    const twitter = yaml.load(twitterFile)
+    const instagram = yaml.load(instagramFile)
 
     return {
         props: { twitter, instagram },
