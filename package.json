@@ -1,12 +1,17 @@
 {
     "name": "sunesports",
     "version": "0.1.0",
+    "description": "Site da Sunlight Esports.",
     "private": true,
+    "author": {
+        "name": "Kevin de Souza Rocha",
+        "email": "kevinsouzarocha@outlook.com"
+    },
     "scripts": {
         "start": "next start",
         "dev": "next dev",
-        "build": "node ./buildSocial.js && next build && next export",
-        "export": "next build && next export"
+        "production": "node ./build/prebuild.js && next build && next export",
+        "build": "next build && next export"
     },
     "dependencies": {
         "axios": "^0.21.1",

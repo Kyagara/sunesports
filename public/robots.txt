@@ -10,8 +10,4 @@
 User-agent: *
 Allow: /
 
-Disallow: /instagram/
-Disallow: /sun-black.svg
-Disallow: /sun-section.svg
-
 Sitemap: https://sunesports.com.br/sitemap.xml
