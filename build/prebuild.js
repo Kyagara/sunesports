@@ -71,6 +71,7 @@ async function Twitter() {
 
     const removeStr = [
         'https://twitter.com/sunesportsbr/status/1365633399772352517',
+        'https://twitter.com/sunesportsbr/status/1371137910863446027',
         'https://twitter.com/sunesportsbr/status/1368253463914811396',
         'https://twitter.com/sunesportsbr/status/1368654731317571586',
         'https://twitter.com/sunesportsbr/status/1365770300818923528',
