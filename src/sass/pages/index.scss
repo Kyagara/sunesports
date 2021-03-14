@@ -46,6 +46,23 @@ $shadows-small: multiple-box-shadow(400);
 $shadows-medium: multiple-box-shadow(200);
 
 #stars {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+
+    &:after {
+        content: ' ';
+        position: absolute;
+        top: 2000px;
+        width: 2px;
+        height: 2px;
+        background: transparent;
+        box-shadow: $shadows-medium;
+    }
+}
+
+#moving-stars {
     width: 1px;
     height: 1px;
     background: transparent;
@@ -74,22 +91,5 @@ $shadows-medium: multiple-box-shadow(200);
         -webkit-transform: translateY(-2000px);
         -ms-transform: translateY(-2000px);
         transform: translateY(-2000px);
-    }
-}
-
-#stars2 {
-    width: 2px;
-    height: 2px;
-    background: transparent;
-    box-shadow: $shadows-medium;
-
-    &:after {
-        content: ' ';
-        position: absolute;
-        top: 2000px;
-        width: 2px;
-        height: 2px;
-        background: transparent;
-        box-shadow: $shadows-medium;
     }
 }

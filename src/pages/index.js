@@ -47,7 +47,7 @@ const IndexPage = ({ twitter, instagram }) => {
         <>
             <Layout>
                 <div id="stars"></div>
-                <div id="stars2"></div>
+                <div id="moving-stars"></div>
 
                 <section id="inicio" ref={inicioRef} className="section-inicio">
                     <Inicio />
@@ -70,7 +70,7 @@ const IndexPage = ({ twitter, instagram }) => {
     )
 }
 
-export const getStaticProps = async () => {
+export async function getStaticProps() {
     const postsDirectory = path.join(process.cwd())
 
     const twitterPath = path.join(postsDirectory, 'src/data/twitter.yml')
@@ -79,7 +79,6 @@ export const getStaticProps = async () => {
     const twitterFile = fs.readFileSync(twitterPath, 'utf8')
     const instagramFile = fs.readFileSync(instagramPath, 'utf8')
 
-    // Web Development is my passion
     const twitter = yaml.load(twitterFile)
     const instagram = yaml.load(instagramFile)
 

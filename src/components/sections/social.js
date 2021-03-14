@@ -1,7 +1,7 @@
 const Social = ({ instagram, twitter }) => {
     return (
         <div className="social">
-            <div className="sun-slider">
+            <div className="hashtag-slider">
                 <span>
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN

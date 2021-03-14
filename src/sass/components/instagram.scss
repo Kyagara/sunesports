@@ -16,17 +16,17 @@
         }
     }
 
-    @media #{$social-desktop} {
+    @media #{$social} {
         margin: 0;
         display: grid;
-        grid-template-columns: repeat(3, 30%);
+        grid-template-columns: repeat(2, 40%);
         gap: 0.4em;
     }
 
-    @media #{$social-img} {
+    @media #{$tablet} {
         margin: 0;
         display: grid;
-        grid-template-columns: repeat(2, 45%);
+        grid-template-columns: repeat(1, 95%);
         gap: 0.4em;
     }
 }

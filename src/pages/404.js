@@ -1,15 +1,10 @@
 import Link from 'next/link'
 
-function Error() {
+const Error = () => {
     return (
         <div className="oops">
             <div>
-                <img
-                    height="100%"
-                    width="100%"
-                    src="sun-black.svg"
-                    alt=""
-                ></img>
+                <img height="100%" width="100%" src="sun-black.svg" alt="" />
 
                 <p>404 :/</p>
 

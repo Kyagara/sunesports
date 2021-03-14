@@ -9,9 +9,9 @@
     },
     "scripts": {
         "start": "next start",
+        "build": "next build && next export",
         "dev": "next dev",
-        "production": "node ./build/prebuild.js && next build && next export",
-        "build": "next build && next export"
+        "production": "node ./build/prebuild.js && next build && next export"
     },
     "dependencies": {
         "axios": "^0.21.1",
