@@ -1,6 +1,6 @@
 import React from 'react'
 import { DefaultSeo, SocialProfileJsonLd, LogoJsonLd } from 'next-seo'
-import '../css/screen.scss'
+import '../css/globals.scss'
 
 function SunlightApp({ Component, pageProps }) {
     return (
