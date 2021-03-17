@@ -6,6 +6,9 @@ const Layout = ({ children }) => {
         <>
             <Navbar />
 
+            <div id="stars" />
+            <div id="moving-stars" />
+
             {children}
 
             <Footer />

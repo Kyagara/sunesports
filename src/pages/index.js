@@ -1,7 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 import yaml from 'js-yaml'
-import { useRef, useEffect } from 'react'
 
 import Layout from '../components/layout'
 
@@ -10,58 +9,28 @@ import Social from '../components/sections/social'
 import Discord from '../components/sections/discord'
 
 const IndexPage = ({ twitter, instagram }) => {
-    const inicioRef = useRef(null)
-    const socialRef = useRef(null)
-    const discordRef = useRef(null)
-
-    useEffect(() => {
-        let observer
-        if (inicioRef.current && socialRef.current && discordRef.current) {
-            const options = {
-                root: document,
-                rootMargin: '-50% 0px -50%',
-            }
-
-            observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach((entry) => {
-                    const navElement = document.querySelector(
-                        `a[href="/#${entry.target.id}"]`,
-                    )
-                    if (entry.isIntersecting) {
-                        if (!navElement.classList.contains('active')) {
-                            navElement.classList.add('active')
-                        }
-                    } else if (navElement.classList.contains('active')) {
-                        navElement.classList.remove('active')
-                    }
-                })
-            }, options)
-            observer.observe(inicioRef.current)
-            observer.observe(socialRef.current)
-            observer.observe(discordRef.current)
-        }
-        return () => observer.disconnect()
-    }, [inicioRef, socialRef, discordRef])
-
     return (
         <>
             <Layout>
-                <div id="stars"></div>
-                <div id="moving-stars"></div>
-
-                <section id="inicio" ref={inicioRef} className="section-inicio">
+                <section className="flex justify-center items-center h-full min-h-screen">
                     <Inicio />
                 </section>
 
-                <section id="social" ref={socialRef} className="section-social">
-                    <img className="svg" src="sun-section.svg" alt=""></img>
+                <section
+                    id="social"
+                    className="flex flex-col h-full min-h-screen bg-gray-100 relative"
+                >
+                    <img
+                        className="absolute h-full bottom-0 right-0 sun-section-svg"
+                        src="sun-section.svg"
+                        alt=""
+                    ></img>
                     <Social twitter={twitter} instagram={instagram} />
                 </section>
 
                 <section
                     id="discord"
-                    ref={discordRef}
-                    className="section-discord"
+                    className="flex flex-col flex-1 justify-center items-center h-full min-h-200"
                 >
                     <Discord />
                 </section>

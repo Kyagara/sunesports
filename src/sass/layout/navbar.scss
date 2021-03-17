@@ -1,13 +1,5 @@
 header {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    a {
-        color: white;
-    }
+    font-family: 'Lato', sans-serif;
 
     &.header-background {
         background-color: white;
@@ -15,114 +7,11 @@ header {
         transition: background-color 0.2s ease;
 
         a {
-            color: #333;
+            color: black;
         }
     }
-}
-
-.navbar {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr auto 1fr;
-    grid-template-columns: auto auto 1fr;
-    align-items: center;
-}
-
-.navbar-logo {
-    cursor: pointer;
-    margin-left: 2em;
-    padding: 0.6em;
-
-    img {
-        height: 2.4em;
-        width: auto;
-    }
-}
-
-.navbar-menu {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-self: end;
-    list-style: none;
-    margin-right: 4%;
-}
-
-.navbar-links {
-    margin: 0 0.6em;
-    font-family: 'Lato', sans-serif;
 
     a.active {
-        border-bottom: 5px solid #ffa74d;
-    }
-}
-
-.navbar-toggle {
-    display: none;
-}
-
-@media #{$mid-point} {
-    .navbar {
-        -ms-grid-columns: auto 1fr;
-        grid-template-columns: auto 1fr;
-    }
-
-    .navbar-toggle {
-        display: inline;
-        justify-self: right;
-        margin-right: 0.3em;
-        font-size: 2em;
-    }
-
-    .navbar-logo {
-        margin-left: 0.4em;
-    }
-
-    .dummy {
-        display: none;
-    }
-
-    .navbar-links {
-        display: none;
-    }
-
-    .navbar-menu {
-        display: none;
-    }
-
-    .nav-open {
-        .navbar {
-            background-color: #fff;
-            grid-template-columns: repeat(2, auto);
-
-            a {
-                color: #333;
-            }
-        }
-
-        .navbar-logo {
-            margin-left: 0.4em;
-        }
-
-        .navbar-toggle {
-            justify-self: right;
-            margin-right: 0.3em;
-        }
-
-        .navbar-menu {
-            display: table;
-            margin-right: 1.4em;
-        }
-
-        .dummy {
-            display: inline;
-        }
-
-        .navbar-links {
-            display: table;
-            text-align: right;
-            width: 100%;
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
+        border-bottom: 4px solid #ff9400;
     }
 }

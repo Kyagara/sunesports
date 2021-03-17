@@ -5,16 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
 @import '../sass/variables';
 @import '../sass/elements';
+@import '../sass/stars';
 
 @import '../sass/layout/navbar';
 @import '../sass/layout/footer';
 
 @import '../sass/pages/index';
+@import '../sass/pages/sobre';
+@import '../sass/pages/contato';
 @import '../sass/pages/404';
-
-@import '../sass/sections/inicio';
-@import '../sass/sections/social';
-@import '../sass/sections/discord';
-
-@import '../sass/components/twitter';
-@import '../sass/components/instagram';

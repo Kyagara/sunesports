@@ -1,95 +1,114 @@
-.section-inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    min-height: 550px;
+.fade-in {
+    animation: fadeIn ease-in 3s;
 }
 
-.section-social {
-    background-color: #f6f5f5;
-
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-
-    .svg {
-        position: absolute;
-        height: 100%;
-        bottom: 0;
-        right: 0;
-        z-index: 0;
-        mix-blend-mode: overlay;
+.spinAnim {
+    img {
+        animation: spin-animation 180s linear infinite;
     }
 }
 
-.section-discord {
-    min-height: 70vh;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
-
-@function multiple-box-shadow($n) {
-    $value: '#{random(2000)}px #{random(4000)}px #FFF';
-    @for $i from 2 through $n {
-        $value: '#{$value} , #{random(2000)}px #{random(4000)}px #FFF';
-    }
-    @return unquote($value);
-}
-
-$shadows-small: multiple-box-shadow(400);
-$shadows-medium: multiple-box-shadow(200);
-
-#stars {
-    width: 2px;
-    height: 2px;
-    background: transparent;
-    box-shadow: $shadows-medium;
-
-    &:after {
-        content: ' ';
-        position: absolute;
-        top: 2000px;
-        width: 2px;
-        height: 2px;
-        background: transparent;
-        box-shadow: $shadows-medium;
+.hashtag-slider {
+    span {
+        font-family: 'Lato', sans-serif;
+        animation: hashtag-slider 120s linear infinite;
+        margin-left: 0.4em;
     }
 }
 
-#moving-stars {
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: $shadows-small;
-    animation: animStar 50s linear infinite;
-    will-change: transform;
-
-    &:after {
-        content: ' ';
-        position: absolute;
-        top: 2000px;
-        width: 1px;
-        height: 1px;
-        background: transparent;
-        box-shadow: $shadows-small;
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
-@keyframes animStar {
+.sun-section-svg {
+    mix-blend-mode: overlay;
+}
+
+.social-title {
+    font-family: 'Lato', sans-serif;
+
+    a {
+        transition: all 0.2s ease-in-out;
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                transform: scale(1.08);
+                transition: color 0.1s;
+            }
+        }
+    }
+}
+
+.instagram {
+    img {
+        transition: all 0.2s ease-in-out;
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.twitter {
+    font-family: 'Open Sans', sans-serif;
+
+    li {
+        background: linear-gradient(to right, #1da1f2, #1da1f2);
+        background-repeat: no-repeat;
+        background-size: 0 100%;
+        transition: color 2s ease;
+        transition: background-size 0.4s 0s;
+
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                color: white;
+                background-size: 100% 100%;
+            }
+        }
+    }
+}
+
+.discord-title {
+    font-family: 'Lato', sans-serif;
+}
+
+.discord-paragraph {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.discord-invite {
+    background-color: #7289da;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.2s ease-in-out;
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            transform: scale(1.08);
+        }
+    }
+}
+
+@keyframes spin-animation {
     from {
-        -webkit-transform: translateY(0px);
-        -ms-transform: translateY(0px);
-        transform: translateY(0px);
+        transform: rotate(0deg);
     }
     to {
-        -webkit-transform: translateY(-2000px);
-        -ms-transform: translateY(-2000px);
-        transform: translateY(-2000px);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hashtag-slider {
+    0% {
+        transform: translatex(0%);
+    }
+    100% {
+        transform: translatex(-100%);
     }
 }

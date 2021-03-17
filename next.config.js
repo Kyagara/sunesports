@@ -2,6 +2,7 @@ module.exports = {
     exportPathMap: async () => {
         return {
             '/': { page: '/' },
+            '/sobre': { page: '/sobre' },
         }
     },
     webpack: (config) => {

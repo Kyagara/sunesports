@@ -1,35 +1,36 @@
 const Social = ({ instagram, twitter }) => {
     return (
-        <div className="social">
-            <div className="hashtag-slider">
-                <span>
+        <div className="flex flex-wrap flex-1 justify-items-center items-center z-10 min-h-0">
+            <div className="block overflow-hidden whitespace-nowrap w-full mt-4 mb-4 transform-gpu translate-y-2/4 pointer-events-none select-none text-black text-sm uppercase tracking-widest hashtag-slider">
+                <span className="inline-block">
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
                     #SUN #SUN #SUN
                 </span>
-                <span>
+                <span className="inline-block">
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
                     #SUN #SUN #SUN
                 </span>
             </div>
-            <div className="social-container">
+            <div className="flex items-stretch flex-wrap justify-around gap-3 flex-1">
                 <div>
-                    <h3 className="social-title">
+                    <h3 className="flex justify-center uppercase text-4xl m-1 social-title">
                         <div>
                             <a
                                 target="_blank"
                                 href="https://instagram.com/sunlightesports"
                                 aria-label="Instagram"
                                 rel="noopener"
+                                className="flex items-center hover:text-yellow-500"
                             >
-                                <span>Instagram</span>
+                                Instagram
                             </a>
                         </div>
                     </h3>
-                    <div className="instagram-container">
+                    <div className="grid gap-2 sm:grid-cols-2 grid-cols-1 instagram">
                         {instagram.map((post) => (
                             <a
                                 target="_blank"
@@ -50,31 +51,35 @@ const Social = ({ instagram, twitter }) => {
                     </div>
                 </div>
                 <div>
-                    <h3 className="social-title">
+                    <h3 className="flex justify-center uppercase text-4xl m-1 social-title">
                         <div>
                             <a
                                 target="_blank"
                                 href="https://twitter.com/sunesportsbr"
                                 aria-label="Twitter"
                                 rel="noopener"
+                                className="flex items-center hover:text-yellow-500"
                             >
-                                <span>Twitter</span>
+                                Twitter
                             </a>
                         </div>
                     </h3>
-                    <div className="twitter-container">
+                    <div className="text-lg twitter">
                         <ul>
                             {twitter.map((tweet) => (
-                                <li key={tweet.id}>
+                                <li
+                                    key={tweet.id}
+                                    className="flex flex-col max-w-md"
+                                >
                                     <a
                                         target="_blank"
                                         href={tweet.link}
                                         aria-label="Twitter"
                                         rel="noopener"
                                     >
-                                        <div className="tweet">
+                                        <div className="flex flex-col p-4 mb-4">
                                             <p>{tweet.text}</p>
-                                            <span className="date">
+                                            <span className="mt-2 text-sm">
                                                 {tweet.date}
                                             </span>
                                         </div>
