@@ -1,13 +1,11 @@
 import Link from 'next/link'
 
-import styles from '../sass/modules/sunBlendOverlay.module.scss'
-
 const Error = ({ statusCode }) => {
     return (
         <div className="flex flex-col justify-center content-center text-center h-screen bg-gray-300 font-sans error">
             <div className="flex flex-col justify-center content-center items-center">
                 <img
-                    className={`max-h-96 ${styles.sunBlendOverlay}`}
+                    className="max-h-96 opacity-25"
                     height="100%"
                     width="100%"
                     src="sun-black.svg"
