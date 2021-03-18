@@ -3,23 +3,9 @@ import styles from '../../sass/modules/scaleHoverAnimation.module.scss'
 const Social = ({ instagram, twitter }) => {
     return (
         <div className="flex flex-wrap flex-1 justify-items-center items-center z-10 min-h-0">
-            <div className="block overflow-hidden whitespace-nowrap w-full mb-4 transform-gpu translate-y-2/4 pointer-events-none select-none text-black text-sm uppercase font-lato tracking-widest hashtag-slider">
-                <span className="inline-block">
-                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                    #SUN #SUN #SUN
-                </span>
-                <span className="inline-block">
-                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
-                    #SUN #SUN #SUN
-                </span>
-            </div>
             <div className="flex items-stretch flex-wrap justify-around gap-3 flex-1">
                 <div>
-                    <h3 className="flex justify-center uppercase text-4xl m-1 social-title">
+                    <h3 className="flex justify-center uppercase text-4xl my-2 social-title">
                         <div>
                             <a
                                 target="_blank"
@@ -33,7 +19,7 @@ const Social = ({ instagram, twitter }) => {
                         </div>
                     </h3>
 
-                    <div className="grid gap-2 sm:grid-cols-2 grid-cols-1">
+                    <div className="grid gap-5 sm:grid-cols-2 grid-cols-1">
                         {instagram.map((post) => (
                             <a
                                 target="_blank"
@@ -52,10 +38,14 @@ const Social = ({ instagram, twitter }) => {
                                 />
                             </a>
                         ))}
+                        <div className="flex flex-1 flex-col items-center justify-center font-montserrat text-9xl opacity-25 select-none">
+                            <p>#GO</p>
+                            <p>SUN</p>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <h3 className="flex justify-center uppercase text-4xl m-1 social-title">
+                    <h3 className="flex justify-center uppercase text-4xl my-2 social-title">
                         <div>
                             <a
                                 target="_blank"
@@ -93,6 +83,20 @@ const Social = ({ instagram, twitter }) => {
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div className="block overflow-hidden whitespace-nowrap w-full mb-4 transform-gpu translate-y-2/4 pointer-events-none select-none text-black text-sm uppercase font-lato tracking-widest hashtag-slider">
+                <span className="inline-block">
+                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
+                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
+                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
+                    #SUN #SUN #SUN
+                </span>
+                <span className="inline-block">
+                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
+                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
+                    #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
+                    #SUN #SUN #SUN
+                </span>
             </div>
         </div>
     )

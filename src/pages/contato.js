@@ -3,6 +3,8 @@ import kwesforms from 'kwesforms'
 
 import Layout from '../components/layout'
 
+import Header from '../components/layout/header'
+
 const ContatoPage = () => {
     useEffect(() => {
         kwesforms.init()
@@ -11,7 +13,8 @@ const ContatoPage = () => {
     return (
         <>
             <Layout pageTitle="Contato">
-                <div className="pt-24 pb-24 font-openSans">
+                <Header headerTitle="Contato" />
+                <div className="pb-24 font-openSans">
                     <section className="flex py-8 justify-center bg-gray-100">
                         <form
                             method="POST"

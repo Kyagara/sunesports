@@ -2,8 +2,6 @@ import fs from 'fs'
 import path from 'path'
 import yaml from 'js-yaml'
 
-import styles from '../sass/modules/sunBlendOverlay.module.scss'
-
 import Layout from '../components/layout'
 
 import Inicio from '../components/sections/inicio'
@@ -22,7 +20,7 @@ const IndexPage = ({ twitter, instagram }) => {
                 className="flex flex-col h-full min-h-screen bg-gray-100 relative"
             >
                 <img
-                    className={`absolute h-full bottom-0 right-0 ${styles.sunBlendOverlay}`}
+                    className="absolute h-full bottom-0 right-0 opacity-5"
                     src="sun-section.svg"
                     alt=""
                 ></img>

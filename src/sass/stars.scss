@@ -13,6 +13,7 @@ $shadows-medium: multiple-box-shadow(200);
     width: 2px;
     height: 2px;
     background: transparent;
+    position: absolute;
     box-shadow: $shadows-medium;
     overflow: hidden;
 
@@ -30,6 +31,7 @@ $shadows-medium: multiple-box-shadow(200);
 #moving-stars {
     width: 1px;
     height: 1px;
+    position: absolute;
     background: transparent;
     box-shadow: $shadows-small;
     animation: animStar 50s linear infinite;

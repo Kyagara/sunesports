@@ -7,6 +7,7 @@ const Layout = ({ pageTitle, children }) => {
     return (
         <>
             <NextSeo title={pageTitle} />
+
             <Navbar />
 
             <div id="stars" />
