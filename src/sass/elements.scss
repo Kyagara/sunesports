@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -29,8 +24,4 @@ body {
         rgba(78, 93, 148, 1) 100%
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#030020",endColorstr="#4e5d94",GradientType=1);
-}
-
-a {
-    text-decoration: none;
 }

@@ -1,14 +1,17 @@
+import { useEffect } from 'react'
+import kwesforms from 'kwesforms'
+
 import Layout from '../components/layout'
-import Head from 'next/head'
+
 const ContatoPage = () => {
+    useEffect(() => {
+        kwesforms.init()
+    }, [])
+
     return (
         <>
-            <Head>
-                <script src="https://kwes.io/v2/kwes-script.js" defer></script>
-            </Head>
-
-            <Layout>
-                <div className="pt-24 pb-24 contato">
+            <Layout pageTitle="Contato">
+                <div className="pt-24 pb-24 font-openSans">
                     <section className="flex py-8 justify-center bg-gray-100">
                         <form
                             method="POST"
@@ -53,7 +56,7 @@ const ContatoPage = () => {
                                 <div className="w-full px-3">
                                     <label
                                         className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                        for="message"
+                                        htmlFor="message"
                                     >
                                         Mensagem:
                                     </label>

@@ -1,17 +1,15 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-class SunlightDoc extends Document {
+export default class SunlightDoc extends Document {
     render() {
         return (
             <Html lang="pt">
                 <Head />
                 <body>
                     <Main />
-                    <NextScript />
                 </body>
+                <NextScript />
             </Html>
         )
     }
 }
-
-export default SunlightDoc

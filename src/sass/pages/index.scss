@@ -3,62 +3,17 @@
 }
 
 .spinAnim {
-    img {
-        animation: spin-animation 180s linear infinite;
-    }
+    animation: spin-animation 180s linear infinite;
 }
 
 .hashtag-slider {
     span {
-        font-family: 'Lato', sans-serif;
         animation: hashtag-slider 120s linear infinite;
         margin-left: 0.4em;
     }
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.sun-section-svg {
-    mix-blend-mode: overlay;
-}
-
-.social-title {
-    font-family: 'Lato', sans-serif;
-
-    a {
-        transition: all 0.2s ease-in-out;
-
-        @media (hover: hover) and (pointer: fine) {
-            &:hover {
-                transform: scale(1.08);
-                transition: color 0.1s;
-            }
-        }
-    }
-}
-
-.instagram {
-    img {
-        transition: all 0.2s ease-in-out;
-
-        @media (hover: hover) and (pointer: fine) {
-            &:hover {
-                transform: scale(1.05);
-            }
-        }
-    }
-}
-
 .twitter {
-    font-family: 'Open Sans', sans-serif;
-
     li {
         background: linear-gradient(to right, #1da1f2, #1da1f2);
         background-repeat: no-repeat;
@@ -75,23 +30,16 @@
     }
 }
 
-.discord-title {
-    font-family: 'Lato', sans-serif;
-}
-
-.discord-paragraph {
-    font-family: 'Open Sans', sans-serif;
-}
-
 .discord-invite {
     background-color: #7289da;
-    font-family: 'Open Sans', sans-serif;
-    transition: all 0.2s ease-in-out;
+}
 
-    @media (hover: hover) and (pointer: fine) {
-        &:hover {
-            transform: scale(1.08);
-        }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 

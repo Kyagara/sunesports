@@ -4,7 +4,14 @@ module.exports = {
         './src/components/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                montserrat: 'Montserrat',
+                oswald: 'Oswald',
+                lato: 'Lato',
+                openSans: 'Open Sans',
+            },
+        },
     },
     variants: {
         extend: {},

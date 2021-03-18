@@ -1,7 +1,9 @@
+import styles from '../../sass/modules/scaleHoverAnimation.module.scss'
+
 const Social = ({ instagram, twitter }) => {
     return (
         <div className="flex flex-wrap flex-1 justify-items-center items-center z-10 min-h-0">
-            <div className="block overflow-hidden whitespace-nowrap w-full mt-4 mb-4 transform-gpu translate-y-2/4 pointer-events-none select-none text-black text-sm uppercase tracking-widest hashtag-slider">
+            <div className="block overflow-hidden whitespace-nowrap w-full mb-4 transform-gpu translate-y-2/4 pointer-events-none select-none text-black text-sm uppercase font-lato tracking-widest hashtag-slider">
                 <span className="inline-block">
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
@@ -24,13 +26,14 @@ const Social = ({ instagram, twitter }) => {
                                 href="https://instagram.com/sunlightesports"
                                 aria-label="Instagram"
                                 rel="noopener"
-                                className="flex items-center hover:text-yellow-500"
+                                className={`flex items-center hover:text-yellow-500 font-oswald ${styles.scaleBig}`}
                             >
                                 Instagram
                             </a>
                         </div>
                     </h3>
-                    <div className="grid gap-2 sm:grid-cols-2 grid-cols-1 instagram">
+
+                    <div className="grid gap-2 sm:grid-cols-2 grid-cols-1">
                         {instagram.map((post) => (
                             <a
                                 target="_blank"
@@ -38,6 +41,7 @@ const Social = ({ instagram, twitter }) => {
                                 aria-label="Instagram"
                                 rel="noopener"
                                 key={post.id}
+                                className={`${styles.scaleSmall}`}
                             >
                                 <img
                                     height="300px"
@@ -58,13 +62,13 @@ const Social = ({ instagram, twitter }) => {
                                 href="https://twitter.com/sunesportsbr"
                                 aria-label="Twitter"
                                 rel="noopener"
-                                className="flex items-center hover:text-yellow-500"
+                                className={`flex items-center hover:text-yellow-500 font-oswald ${styles.scaleBig}`}
                             >
                                 Twitter
                             </a>
                         </div>
                     </h3>
-                    <div className="text-lg twitter">
+                    <div className="text-lg twitter font-openSans">
                         <ul>
                             {twitter.map((tweet) => (
                                 <li

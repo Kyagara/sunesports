@@ -3,6 +3,7 @@ module.exports = {
         return {
             '/': { page: '/' },
             '/sobre': { page: '/sobre' },
+            '/contato': { page: '/contato' },
         }
     },
     webpack: (config) => {

@@ -1,26 +1,27 @@
+import styles from '../../sass/modules/scaleHoverAnimation.module.scss'
+
 const Discord = () => {
     return (
-        <div className="flex flex-col items-center justify-center flex-1 z-10">
-            <h3 className="uppercase text-center text-white text-5xl mt-20 mb-20 font-bold discord-title">
+        <div className="flex flex-1 text-white text-center flex-col items-center justify-center z-10 my-16">
+            <h3 className="uppercase text-5xl font-oswald">
                 Sunlight Community
             </h3>
 
-            <span className="text-center sm:pr-8 pr-20 sm:pl-8 pl-20 text-2xl text-white  discord-paragraph">
-                O servidor de Discord da Sunlight Esports conta com mais de 250
-                membros jogando diversos jogos, conversando sobre diversos
-                assuntos, assistindo os jogos da SUN, ouvindo juntos as rádios
-                da SUN e muito mais.
-            </span>
-            <span className="text-center sm:pr-8 pr-20 sm:pl-8 pl-20 text-2xl text-white discord-paragraph">
-                Venha para a #SUN Community!
-            </span>
-
+            <div className="flex flex-col my-14 px-4 text-2xl font-openSans">
+                <span>
+                    O servidor de Discord da Sunlight Esports conta com mais de
+                    250 membros jogando diversos jogos, conversando sobre
+                    diversos assuntos, assistindo os jogos da SUN, ouvindo
+                    juntos as rádios da SUN e muito mais.
+                </span>
+                <span>Venha para a #SUN Community!</span>
+            </div>
             <a
                 target="_blank"
                 href="https://discord.gg/c8Y5QFy4Qa"
                 aria-label="Discord"
                 rel="noopener"
-                className="inline-block p-4 mt-10 mb-28 text-center text-base text-white font-bold border-none no-underline cursor-pointer discord-invite"
+                className={`inline-block p-4 text-base font-bold border-none no-underline cursor-pointer font-openSans discord-invite ${styles.scaleBig}`}
             >
                 Acesse o nosso discord!
             </a>

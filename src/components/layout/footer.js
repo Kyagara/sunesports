@@ -7,7 +7,7 @@ import {
 
 const Footer = () => {
     return (
-        <footer className="relative bg-gray-800 pt-4 sm:mt-10 z-20">
+        <footer className="relative bg-gray-800 pt-4 sm:mt-10 z-20 font-oswald">
             <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap">
                 <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
                     <Link href="/">

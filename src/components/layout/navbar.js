@@ -6,33 +6,28 @@ const Navbar = () => {
     const router = useRouter()
     const [navOpen, setNavOpen] = useState(false)
 
-    useEffect(() => {
-        document.addEventListener('scroll', () => {
-            handleScroll()
-        })
-    }, [])
-
     const Toggle = () => {
-        let header = document.getElementById('mainHeader')
-
-        if (!navOpen) {
-            setNavOpen(!navOpen)
-        } else {
-            setNavOpen(!navOpen)
-        }
+        const header = document.getElementById('mainHeader')
 
         if (!header.classList.toggle('header-background')) {
             !header.classList.toggle('header-background')
         }
+        setNavOpen(!navOpen)
     }
 
     const handleScroll = () => {
-        let header = document.getElementById('mainHeader')
-        let scrollTop = document.documentElement.scrollTop
+        const header = document.getElementById('mainHeader')
+        const scrollTop = document.documentElement.scrollTop
 
         !header.classList.toggle('header-background', scrollTop >= 100)
-        setNavOpen(navOpen)
     }
+
+    useEffect(() => {
+        document.addEventListener('scroll', handleScroll)
+        return () => {
+            document.removeEventListener('scroll', () => handleScroll)
+        }
+    }, [handleScroll])
 
     return (
         <header
@@ -65,14 +60,14 @@ const Navbar = () => {
                             (navOpen ? ' flex justify-end' : ' hidden')
                         }
                     >
-                        <ul className="flex flex-col text-right md:flex-row list-none md:ml-auto text-lg">
+                        <ul className="flex flex-col text-right md:flex-row list-none md:ml-auto font-oswald">
                             <li>
                                 <Link href="/">
                                     <a
                                         className={
                                             router.pathname == '/'
-                                                ? 'active px-1 my-3 md:mx-4 flex justify-end items-center font-bold'
-                                                : 'px-1 my-3 md:mx-4 flex justify-end items-center font-bold'
+                                                ? 'active px-1 my-3 md:mx-4 flex justify-end items-center tracking-wider text-xl'
+                                                : 'px-1 my-3 md:mx-4 flex justify-end items-center tracking-wider text-xl'
                                         }
                                     >
                                         Inicio
@@ -84,8 +79,8 @@ const Navbar = () => {
                                     <a
                                         className={
                                             router.pathname == '/sobre'
-                                                ? 'active px-1 my-3 md:mx-4 flex justify-end items-center font-bold'
-                                                : 'px-1 my-3 md:mx-4 flex justify-end items-center font-bold'
+                                                ? 'active px-1 my-3 md:mx-4 flex justify-end items-center tracking-wider text-xl'
+                                                : 'px-1 my-3 md:mx-4 flex justify-end items-center tracking-wider text-xl'
                                         }
                                     >
                                         Sobre

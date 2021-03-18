@@ -2,6 +2,8 @@ import fs from 'fs'
 import path from 'path'
 import yaml from 'js-yaml'
 
+import styles from '../sass/modules/sunBlendOverlay.module.scss'
+
 import Layout from '../components/layout'
 
 import Inicio from '../components/sections/inicio'
@@ -10,32 +12,30 @@ import Discord from '../components/sections/discord'
 
 const IndexPage = ({ twitter, instagram }) => {
     return (
-        <>
-            <Layout>
-                <section className="flex justify-center items-center h-full min-h-screen">
-                    <Inicio />
-                </section>
+        <Layout>
+            <section className="flex justify-center items-center h-full overflow-hidden min-h-screen">
+                <Inicio />
+            </section>
 
-                <section
-                    id="social"
-                    className="flex flex-col h-full min-h-screen bg-gray-100 relative"
-                >
-                    <img
-                        className="absolute h-full bottom-0 right-0 sun-section-svg"
-                        src="sun-section.svg"
-                        alt=""
-                    ></img>
-                    <Social twitter={twitter} instagram={instagram} />
-                </section>
+            <section
+                id="social"
+                className="flex flex-col h-full min-h-screen bg-gray-100 relative"
+            >
+                <img
+                    className={`absolute h-full bottom-0 right-0 ${styles.sunBlendOverlay}`}
+                    src="sun-section.svg"
+                    alt=""
+                ></img>
+                <Social twitter={twitter} instagram={instagram} />
+            </section>
 
-                <section
-                    id="discord"
-                    className="flex flex-col flex-1 justify-center items-center h-full min-h-200"
-                >
-                    <Discord />
-                </section>
-            </Layout>
-        </>
+            <section
+                id="discord"
+                className="flex flex-col flex-1 justify-center items-center h-full min-h-200"
+            >
+                <Discord />
+            </section>
+        </Layout>
     )
 }
 
