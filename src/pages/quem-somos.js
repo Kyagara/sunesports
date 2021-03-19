@@ -4,8 +4,8 @@ import Header from '../components/layout/header'
 
 const SobrePage = () => {
     return (
-        <Layout pageTitle="Sobre">
-            <Header headerTitle="Sobre" />
+        <Layout pageTitle="Quem somos">
+            <Header headerTitle="Quem somos" />
             <div></div>
         </Layout>
     )

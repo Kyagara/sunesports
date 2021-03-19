@@ -7,17 +7,17 @@ import {
 
 const Footer = () => {
     return (
-        <footer className="relative bg-gray-800 pt-4 sm:mt-10 z-20 font-oswald">
+        <footer className="relative bg-gray-800 pt-4 z-10 font-oswald">
             <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap">
                 <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-                    <Link href="/">
+                    <Link href="/#">
                         <img
                             height="50%"
                             width="50%"
                             src="sun-white.svg"
                             alt=""
                             className="cursor-pointer"
-                        ></img>
+                        />
                     </Link>
                 </div>
 
@@ -26,7 +26,7 @@ const Footer = () => {
                         Sunlight Esports
                     </div>
 
-                    <Link href="/">
+                    <Link href="/#">
                         <a className="my-3 block text-gray-300 hover:text-gray-50 text-sm font-medium duration-300">
                             Inicio
                         </a>
@@ -47,12 +47,12 @@ const Footer = () => {
 
                 <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
                     <div className="text-xs uppercase text-gray-400 font-medium mb-6">
-                        Informações
+                        Sobre
                     </div>
 
-                    <Link href="/sobre">
+                    <Link href="/quem-somos">
                         <a className="my-3 block text-gray-300 hover:text-gray-50 text-sm font-medium duration-300">
-                            Sobre
+                            Quem somos
                         </a>
                     </Link>
 

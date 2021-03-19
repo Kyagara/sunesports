@@ -38,9 +38,11 @@ const Social = ({ instagram, twitter }) => {
                                 />
                             </a>
                         ))}
-                        <div className="flex flex-1 flex-col items-center justify-center font-montserrat text-9xl opacity-25 select-none">
-                            <p>#GO</p>
-                            <p>SUN</p>
+                        <div className="flex flex-1 flex-col items-center justify-center text-center font-montserrat text-9xl opacity-25 select-none">
+                            <p className="w-full tracking-tight">#GO</p>
+                            <p className="w-full text-right tracking-wide">
+                                SUN
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -84,7 +86,7 @@ const Social = ({ instagram, twitter }) => {
                     </div>
                 </div>
             </div>
-            <div className="block overflow-hidden whitespace-nowrap w-full mb-4 transform-gpu translate-y-2/4 pointer-events-none select-none text-black text-sm uppercase font-lato tracking-widest hashtag-slider">
+            <div className="block overflow-hidden whitespace-nowrap w-full my-6 transform-gpu translate-y-2/4 pointer-events-none select-none text-black text-sm uppercase font-lato tracking-widest hashtag-slider">
                 <span className="inline-block">
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN
                     #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN #SUN

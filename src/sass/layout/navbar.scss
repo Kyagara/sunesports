@@ -6,6 +6,18 @@ header {
 
         a {
             color: black;
+
+            &:hover {
+                color: #374151;
+            }
+        }
+
+        p {
+            color: black;
+
+            &:hover {
+                color: #374151;
+            }
         }
     }
 
@@ -13,4 +25,7 @@ header {
         margin-bottom: -0.2em;
         border-bottom: 4px solid #ff9400;
     }
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
