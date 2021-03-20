@@ -21,7 +21,7 @@ const Discord = () => {
                 href="https://discord.gg/c8Y5QFy4Qa"
                 aria-label="Discord"
                 rel="noopener"
-                className={`inline-block p-4 text-base font-bold border-none no-underline cursor-pointer font-openSans discord-invite ${styles.scaleBig}`}
+                className={`inline-block p-4 text-base font-bold border-none no-underline cursor-pointer font-openSans discord-invite ${styles.scaleSmall}`}
             >
                 Acesse o nosso discord!
             </a>

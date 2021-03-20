@@ -126,13 +126,13 @@ const Navbar = () => {
                             (navOpen ? ' hidden' : ' hidden')
                         }
                     >
-                        <ul className="flex flex-col sm:flex-row list-none sm:ml-auto justify-end items-center tracking-wider sm:mr-4">
+                        <ul className="flex flex-col sm:flex-row list-none sm:ml-auto justify-end items-center tracking-wider sm:mr-8">
                             <div className="dropdown">
                                 <li className="px-1 flex flex-1 my-3 sm:my-0 sm:mx-4 cursor-pointer hover:text-yellow-300">
-                                    <a>Sobre</a>
+                                    <span>Sobre</span>
                                 </li>
                                 <div className="dropdown-menu absolute hidden text-black pt-4 pl-5 text-left">
-                                    <div className="flex flex-1 whitespace-nowrap flex-col bg-gray-100 p-2 shadow">
+                                    <div className="flex flex-1 whitespace-nowrap flex-col bg-gray-100 p-4 shadow">
                                         <div className="block py-1 hover:text-gray-700">
                                             <Link href="/quem-somos">
                                                 <a

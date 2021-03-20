@@ -1,12 +1,13 @@
 import React from 'react'
 import App from 'next/app'
 import { DefaultSeo, SocialProfileJsonLd, LogoJsonLd } from 'next-seo'
+import { AnimatePresence, motion } from 'framer-motion'
 
 import '../css/globals.scss'
 
 export default class SunlightApp extends App {
     render() {
-        const { pageTitle, Component, pageProps } = this.props
+        const { Component, pageProps } = this.props
         return (
             <React.Fragment>
                 <DefaultSeo
@@ -60,8 +61,14 @@ export default class SunlightApp extends App {
                     logo="https://sunesports.com.br/sun.svg"
                     url="https://sunesports.com.br"
                 />
-
-                <Component {...pageProps} />
+                <AnimatePresence exitBeforeEnter>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                    >
+                        <Component {...pageProps} />
+                    </motion.div>
+                </AnimatePresence>
             </React.Fragment>
         )
     }

@@ -11,6 +11,8 @@ import Discord from '../components/sections/discord'
 const IndexPage = ({ twitter, instagram }) => {
     return (
         <Layout>
+            <div id="stars" />
+            <div id="moving-stars" />
             <section className="flex justify-center items-center h-full overflow-hidden min-h-screen">
                 <Inicio />
             </section>
@@ -23,7 +25,7 @@ const IndexPage = ({ twitter, instagram }) => {
                     className="absolute h-full bottom-0 right-0 opacity-5"
                     src="sun-section.svg"
                     alt=""
-                ></img>
+                />
                 <Social twitter={twitter} instagram={instagram} />
             </section>
 
