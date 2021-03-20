@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { AiOutlineHome } from 'react-icons/ai'
 
 const Error = ({ statusCode }) => {
     return (
