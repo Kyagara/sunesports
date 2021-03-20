@@ -32,13 +32,13 @@ const Navbar = () => {
     return (
         <header
             id="mainHeader"
-            className="fixed z-20 w-full uppercase font-oswald text-base text-white border-b border-white border-opacity-50"
+            className="fixed z-40 w-full uppercase font-oswald text-base text-white border-b border-white border-opacity-50"
         >
             <nav className="relative flex flex-wrap items-center justify-between px-8 py-3">
                 <div className="w-full flex flex-wrap items-center">
                     <div className="w-full flex justify-between items-center sm:w-auto">
                         <Link href="/#">
-                            <p className="cursor-pointer text-xl hover:text-yellow-300">
+                            <p className="cursor-pointer text-xl hover:text-sun-yellow">
                                 Sunlight Esports
                             </p>
                         </Link>

@@ -1,13 +1,20 @@
 import React from 'react'
 import App from 'next/app'
+import router from 'next/router'
+
 import { DefaultSeo, SocialProfileJsonLd, LogoJsonLd } from 'next-seo'
-import { AnimatePresence, motion } from 'framer-motion'
+import NProgress from 'nprogress'
 
 import '../css/globals.scss'
 
 export default class SunlightApp extends App {
     render() {
         const { Component, pageProps } = this.props
+
+        router.events.on('routeChangeStart', () => NProgress.start())
+        router.events.on('routeChangeComplete', () => NProgress.done())
+        router.events.on('routeChangeError', () => NProgress.done())
+
         return (
             <React.Fragment>
                 <DefaultSeo
@@ -61,14 +68,8 @@ export default class SunlightApp extends App {
                     logo="https://sunesports.com.br/sun.svg"
                     url="https://sunesports.com.br"
                 />
-                <AnimatePresence exitBeforeEnter>
-                    <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                    >
-                        <Component {...pageProps} />
-                    </motion.div>
-                </AnimatePresence>
+
+                <Component {...pageProps} />
             </React.Fragment>
         )
     }

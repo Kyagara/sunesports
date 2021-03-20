@@ -12,6 +12,14 @@ header {
             }
         }
 
+        span {
+            color: black;
+
+            &:hover {
+                color: #374151;
+            }
+        }
+
         p {
             color: black;
 

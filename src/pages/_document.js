@@ -5,7 +5,7 @@ export default class SunlightDoc extends Document {
         return (
             <Html lang="pt">
                 <Head />
-                <body>
+                <body className="animate-fade-in">
                     <Main />
                 </body>
                 <NextScript />

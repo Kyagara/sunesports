@@ -7,8 +7,8 @@ import {
 
 const Footer = () => {
     return (
-        <footer className="relative bg-gray-800 pt-4 z-10 font-lato">
-            <div className="max-w-6xl m-auto text-gray-800 flex flex-wrap">
+        <footer className="relative bg-gray-800 pt-4 z-20">
+            <div className="flex flex-wrap max-w-6xl m-auto">
                 <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
                     <Link href="/#">
                         <img
@@ -21,50 +21,50 @@ const Footer = () => {
                     </Link>
                 </div>
 
-                <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-                    <div className="text-xs uppercase text-gray-400 font-medium mb-6">
+                <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12 font-lato text-gray-300 font-medium text-sm">
+                    <div className="text-xs uppercase text-gray-400 mb-6">
                         Sunlight Esports
                     </div>
 
                     <Link href="/#">
-                        <a className="my-3 block text-gray-300 hover:text-gray-50 text-sm font-medium duration-300">
+                        <a className="my-3 block hover:text-gray-50 duration-300">
                             Inicio
                         </a>
                     </Link>
 
                     <Link href="/#social">
-                        <a className="my-3 block text-gray-300 hover:text-gray-50 text-sm font-medium duration-300">
+                        <a className="my-3 block hover:text-gray-50 duration-300">
                             Redes Sociais
                         </a>
                     </Link>
 
                     <Link href="/#discord">
-                        <a className="my-3 block text-gray-300 hover:text-gray-50 text-sm font-medium duration-300">
+                        <a className="my-3 block hover:text-gray-50 duration-300">
                             Discord
                         </a>
                     </Link>
                 </div>
 
-                <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-                    <div className="text-xs uppercase text-gray-400 font-medium mb-6">
+                <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12 font-lato text-gray-300 font-medium text-sm">
+                    <div className="text-xs uppercase text-gray-400 mb-6">
                         Sobre
                     </div>
 
                     <Link href="/quem-somos">
-                        <a className="my-3 block text-gray-300 hover:text-gray-50 text-sm font-medium duration-300">
+                        <a className="my-3 block hover:text-gray-50 duration-300">
                             Quem somos
                         </a>
                     </Link>
 
                     <Link href="/contato">
-                        <a className="my-3 block text-gray-300 hover:text-gray-50 text-sm font-medium duration-300">
+                        <a className="my-3 block hover:text-gray-50 duration-300">
                             Contato
                         </a>
                     </Link>
                 </div>
 
-                <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-                    <div className="text-xs uppercase text-gray-400 font-medium mb-6">
+                <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12 font-lato text-gray-300 font-medium text-sm">
+                    <div className="text-xs uppercase text-gray-400 mb-6">
                         Redes Sociais
                     </div>
 
@@ -73,7 +73,7 @@ const Footer = () => {
                         href="https://twitter.com/sunesportsbr"
                         aria-label="Twitter"
                         rel="noopener"
-                        className="my-3 flex flex-row items-center text-gray-300 hover:text-gray-50 text-sm font-medium duration-300"
+                        className="my-3 flex flex-row items-center hover:text-gray-50 duration-300"
                     >
                         <AiFillTwitterSquare className="text-base my-0 mr-1" />
                         Twitter
@@ -84,7 +84,7 @@ const Footer = () => {
                         href="https://www.instagram.com/sunlightesports"
                         aria-label="Twitter"
                         rel="noopener"
-                        className="my-3 flex flex-row items-center text-gray-300 hover:text-gray-50 text-sm font-medium duration-300"
+                        className="my-3 flex flex-row items-center hover:text-gray-50 duration-300"
                     >
                         <AiFillInstagram className="text-base mr-1" />
                         Instagram
@@ -95,7 +95,7 @@ const Footer = () => {
                         href="https://www.facebook.com/sunesportsbr"
                         aria-label="Facebook"
                         rel="noopener"
-                        className="my-3 flex flex-row items-center text-gray-300 hover:text-gray-50 text-sm font-medium duration-300"
+                        className="my-3 flex flex-row items-center hover:text-gray-50 duration-300"
                     >
                         <AiFillFacebook className="text-base mr-1" /> Facebook
                     </a>

@@ -5,8 +5,6 @@ import Layout from '../components/layout'
 import Header from '../components/layout/header'
 import { AiFillMail, AiOutlineWhatsApp } from 'react-icons/ai'
 
-import styles from '../sass/modules/scaleHoverAnimation.module.scss'
-
 const ContatoPage = () => {
     useEffect(() => {
         kwesforms.init()
@@ -131,7 +129,7 @@ const ContatoPage = () => {
                             <div className="md:flex md:items-center">
                                 <div className="md:w-1/3">
                                     <button
-                                        className={`shadow bg-gray-200 text-gray-700 font-bold py-2 px-4 rounded ${styles.scaleSmall}`}
+                                        className="shadow bg-gray-200 text-gray-700 font-bold py-2 px-4 rounded transform transition duration-200 hover:scale-105"
                                         type="submit"
                                     >
                                         Enviar

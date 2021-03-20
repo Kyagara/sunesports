@@ -1,9 +1,7 @@
-import styles from '../../sass/modules/scaleHoverAnimation.module.scss'
-
 const Discord = () => {
     return (
-        <div className="flex flex-1 text-white text-center flex-col items-center justify-center z-10 my-16">
-            <h3 className="uppercase text-5xl font-oswald">
+        <div className="flex flex-1 flex-col my-16 items-center text-white text-center">
+            <h3 className="font-oswald uppercase text-5xl">
                 Sunlight Community
             </h3>
 
@@ -21,7 +19,7 @@ const Discord = () => {
                 href="https://discord.gg/c8Y5QFy4Qa"
                 aria-label="Discord"
                 rel="noopener"
-                className={`inline-block p-4 text-base font-bold border-none no-underline cursor-pointer font-openSans discord-invite ${styles.scaleSmall}`}
+                className="inline-block p-4 font-bold border-none no-underline cursor-pointer font-openSans bg-discord-blue transform transition duration-200 hover:scale-105"
             >
                 Acesse o nosso discord!
             </a>

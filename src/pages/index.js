@@ -13,26 +13,24 @@ const IndexPage = ({ twitter, instagram }) => {
         <Layout>
             <div id="stars" />
             <div id="moving-stars" />
-            <section className="flex justify-center items-center h-full overflow-hidden min-h-screen">
+
+            <section className="flex justify-center overflow-hidden items-center min-h-screen">
                 <Inicio />
             </section>
 
             <section
                 id="social"
-                className="flex flex-col h-full min-h-screen bg-gray-100 relative"
+                className="relative flex flex-col min-h-screen bg-gray-100"
             >
                 <img
-                    className="absolute h-full bottom-0 right-0 opacity-5"
+                    className="absolute h-full right-0 opacity-5"
                     src="sun-section.svg"
                     alt=""
                 />
                 <Social twitter={twitter} instagram={instagram} />
             </section>
 
-            <section
-                id="discord"
-                className="flex flex-col flex-1 justify-center items-center h-full min-h-200"
-            >
+            <section id="discord" className="min-h-200">
                 <Discord />
             </section>
         </Layout>
