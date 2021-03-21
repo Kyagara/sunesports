@@ -24,7 +24,7 @@ module.exports = {
                 },
             },
             animation: {
-                'fade-in': 'fade-in 1s ease-out',
+                'fade-in': 'fade-in 1.2s ease-out',
                 'spin-slow': 'spin 180s linear infinite',
                 'hashtag-slider': 'hashtag-slider 120s linear infinite',
             },

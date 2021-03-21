@@ -32,7 +32,7 @@ export default class SunlightApp extends App {
                             'A SUN é uma organização de Esports brasileira que atualmente compete em League of Legends.',
                         images: [
                             {
-                                url: 'https://sunesports.com.br/card.png',
+                                url: '/card.png',
                                 width: '400',
                                 height: '400',
                             },
@@ -49,6 +49,10 @@ export default class SunlightApp extends App {
                         {
                             name: 'theme-color',
                             content: '#FF9400',
+                        },
+                        {
+                            name: 'Criado por',
+                            content: '@SUNKevint',
                         },
                     ]}
                 />

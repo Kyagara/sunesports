@@ -104,7 +104,7 @@ const Footer = () => {
 
             <div className="pt-2">
                 <div
-                    className="flex flex-1 py-5 px-3 m-auto 
+                    className="flex flex-1 py-5 px-3 m-auto justficy-center items-center
                     border-t border-gray-500 text-gray-400 text-sm 
                     flex-col md:flex-row max-w-6xl justify-center"
                 >

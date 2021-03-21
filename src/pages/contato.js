@@ -14,15 +14,15 @@ const ContatoPage = () => {
         <>
             <Layout pageTitle="Contato">
                 <Header headerTitle="Contato" />
-                <div className="font-openSans">
-                    <section className="relative flex flex-1 flex-col sm:flex-row gap-8 px-8 p-4 sm:p-4 bg-gray-100 py-8 justify-center min-h-screen">
+                <div className="relative p-8 min-h-screen font-openSans bg-gray-100">
+                    <section className="flex flex-1 flex-col sm:flex-row justify-center gap-8">
                         <img
-                            className="absolute h-full bottom-0 right-0 opacity-5"
+                            className="absolute h-full right-0 opacity-5"
                             src="sun-section.svg"
                             alt=""
                         />
-                        <div className="flex flex-1 flex-col items-center justify-center max-w-lg text-left">
-                            <div className="">
+                        <div className="flex flex-1 flex-col items-center justify-center max-w-lg">
+                            <div>
                                 <span className="font-oswald uppercase text-2xl">
                                     Fale com a Sunlight Esports
                                 </span>
@@ -32,7 +32,7 @@ const ContatoPage = () => {
                                         <AiOutlineWhatsApp />
                                         (71) 98234-1420
                                     </span>
-                                    <span className="hover:text-gray-700">
+                                    <span className="hover:text-gray-400">
                                         <a
                                             target="_blank"
                                             href="mailto:contato@sunesports.com.br"
@@ -57,84 +57,74 @@ const ContatoPage = () => {
                         <form
                             method="POST"
                             action="https://kwes.io/api/foreign/forms/rxOftyQTeHxJMkXTMGRX"
-                            className="kwes-form flex justify-center flex-col z-10"
+                            className="kwes-form flex flex-1 max-w-3xl flex-col justify-center z-10"
                         >
+                            <div className="text-gray-700">
+                                <label
+                                    className="block uppercase tracking-wide text-xs font-bold mb-1"
+                                    htmlFor="name"
+                                >
+                                    Nome *
+                                </label>
+                                <input
+                                    className="block w-full appearance-none bg-gray-200 border border-gray-200 rounded p-3 mb-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    rules="required"
+                                />
+                            </div>
+                            <div className="text-gray-700">
+                                <label
+                                    className="block uppercase tracking-wide text-xs font-bold mb-1"
+                                    htmlFor="email"
+                                >
+                                    Email *
+                                </label>
+                                <input
+                                    className="block w-full appearance-none bg-gray-200 border border-gray-200 rounded p-3 mb-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    rules="required|email|max:255"
+                                />
+                            </div>
+                            <div className="text-gray-700">
+                                <label
+                                    className="block uppercase tracking-wide text-xs font-bold mb-1"
+                                    htmlFor="subject"
+                                >
+                                    Assunto *
+                                </label>
+                                <input
+                                    className="block w-full appearance-none bg-gray-200 border border-gray-200 rounded p-3 mb-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                                    type="subject"
+                                    name="subject"
+                                    id="subject"
+                                    rules="required"
+                                />
+                            </div>
+                            <div className="text-gray-700">
+                                <label
+                                    className="block uppercase tracking-wide text-xs font-bold mb-1"
+                                    htmlFor="message"
+                                >
+                                    Mensagem *
+                                </label>
+                                <textarea
+                                    className="block w-full resize-y appearance-none bg-gray-200 border border-gray-200 rounded p-3 mb-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48"
+                                    name="message"
+                                    id="message"
+                                    rules="required"
+                                />
+                            </div>
                             <div>
-                                <div className="w-full">
-                                    <label
-                                        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                        htmlFor="name"
-                                    >
-                                        Nome *
-                                    </label>
-                                    <input
-                                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                        type="text"
-                                        name="name"
-                                        id="name"
-                                        rules="required"
-                                    ></input>
-                                </div>
-                            </div>
-                            <div className="flex flex-wrap -mx-3 ">
-                                <div className="w-full px-3">
-                                    <label
-                                        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                        htmlFor="email"
-                                    >
-                                        Email *
-                                    </label>
-                                    <input
-                                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                        type="email"
-                                        name="email"
-                                        id="email"
-                                        rules="required|email|max:255"
-                                    ></input>
-                                </div>
-                            </div>
-                            <div className="flex flex-wrap -mx-3 mb-6">
-                                <div className="w-full px-3">
-                                    <label
-                                        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                        htmlFor="subject"
-                                    >
-                                        Assunto *
-                                    </label>
-                                    <input
-                                        className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                                        type="subject"
-                                        name="subject"
-                                        id="subject"
-                                        rules="required"
-                                    ></input>
-                                </div>
-                            </div>
-                            <div className="flex flex-wrap -mx-3 mb-6">
-                                <div className="w-full px-3">
-                                    <label
-                                        className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
-                                        htmlFor="message"
-                                    >
-                                        Mensagem *
-                                    </label>
-                                    <textarea
-                                        className="resize-y appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48"
-                                        name="message"
-                                        id="message"
-                                        rules="required"
-                                    />
-                                </div>
-                            </div>
-                            <div className="md:flex md:items-center">
-                                <div className="md:w-1/3">
-                                    <button
-                                        className="shadow bg-gray-200 text-gray-700 font-bold py-2 px-4 rounded transform transition duration-200 hover:scale-105"
-                                        type="submit"
-                                    >
-                                        Enviar
-                                    </button>
-                                </div>
+                                <button
+                                    className="shadow bg-gray-200 text-gray-700 font-bold p-3 rounded transform transition duration-200 hover:scale-105"
+                                    type="submit"
+                                >
+                                    Enviar
+                                </button>
                             </div>
                         </form>
                     </section>
