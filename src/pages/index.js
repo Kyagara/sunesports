@@ -4,9 +4,9 @@ import yaml from 'js-yaml'
 
 import Layout from '../components/layout'
 
-import Inicio from '../components/sections/inicio'
-import Social from '../components/sections/social'
-import Discord from '../components/sections/discord'
+import Inicio from '../components/index/inicio'
+import Social from '../components/index/social'
+import Discord from '../components/index/discord'
 
 const IndexPage = ({ twitter, instagram }) => {
     return (

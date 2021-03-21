@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className="relative bg-gray-800 pt-4 z-20">
             <div className="flex flex-wrap max-w-6xl m-auto">
                 <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
-                    <Link href="/#">
+                    <Link href="/">
                         <img
                             height="50%"
                             width="50%"
@@ -26,7 +26,7 @@ const Footer = () => {
                         Sunlight Esports
                     </div>
 
-                    <Link href="/#">
+                    <Link href="/">
                         <a className="my-3 block hover:text-gray-50 duration-300">
                             Inicio
                         </a>

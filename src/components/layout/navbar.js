@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { useRouter } from 'next/router'
 
 const Navbar = () => {
@@ -22,10 +22,17 @@ const Navbar = () => {
         !header.classList.toggle('header-background', scrollTop >= 10)
     }
 
+    const resetWindowScrollPosition = useCallback(
+        () => window.scrollTo(0, 0),
+        [],
+    )
+
     useEffect(() => {
         document.addEventListener('scroll', handleScroll)
+        router.events.on('routeChangeComplete', resetWindowScrollPosition)
         return () => {
             document.removeEventListener('scroll', () => handleScroll)
+            router.events.off('routeChangeComplete', resetWindowScrollPosition)
         }
     }, [handleScroll])
 
@@ -37,7 +44,7 @@ const Navbar = () => {
             <nav className="relative flex flex-wrap items-center justify-between px-8 py-3">
                 <div className="w-full flex flex-wrap items-center">
                     <div className="w-full flex justify-between items-center sm:w-auto">
-                        <Link href="/#">
+                        <Link href="/">
                             <span className="cursor-pointer text-xl hover:text-sun-yellow">
                                 Sunlight Esports
                             </span>
@@ -78,7 +85,7 @@ const Navbar = () => {
                                                 Sunlight Esports
                                             </div>
                                             <div className="text-lg">
-                                                <Link href="/#">
+                                                <Link href="/">
                                                     <a>Inicio</a>
                                                 </Link>
 

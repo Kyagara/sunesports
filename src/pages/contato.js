@@ -15,12 +15,12 @@ const ContatoPage = () => {
             <Layout pageTitle="Contato">
                 <Header headerTitle="Contato" />
                 <div className="relative p-8 min-h-screen font-openSans bg-gray-100">
-                    <section className="flex flex-1 flex-col sm:flex-row justify-center gap-8">
-                        <img
-                            className="absolute h-full right-0 opacity-5"
-                            src="sun-section.svg"
-                            alt=""
-                        />
+                    <img
+                        className="absolute h-full right-0 opacity-5"
+                        src="sun-section.svg"
+                        alt=""
+                    />
+                    <section className="flex flex-1 flex-col sm:flex-row items-center justify-center gap-8">
                         <div className="flex flex-1 flex-col items-center justify-center max-w-lg">
                             <div>
                                 <span className="font-oswald uppercase text-2xl">
