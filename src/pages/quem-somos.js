@@ -8,7 +8,7 @@ const SobrePage = () => {
             <Header headerTitle="Quem somos" />
             <div id="moving-stars"></div>
             <div className="text-white flex flex-1 flex-col font-openSans gap-20 m-4">
-                <span className="font-oswald uppercase text-4xl italic mt-14 ml-20 animate-fade-in">
+                <span className="font-oswald uppercase text-4xl italic mt-14 sm:ml-20 animate-fade-in">
                     "In it's own time, sunlight bathes even the darkest of
                     shadows."
                 </span>
@@ -38,7 +38,7 @@ const SobrePage = () => {
                     </div>
                 </section>
 
-                <span className="font-oswald uppercase text-4xl italic ml-20 animate-fade-in">
+                <span className="font-oswald uppercase text-4xl italic sm:ml-20 animate-fade-in">
                     "Praise the sun, which will light your way."
                 </span>
 
@@ -70,7 +70,7 @@ const SobrePage = () => {
                     </div>
                 </section>
 
-                <span className="font-oswald uppercase text-4xl italic ml-20 animate-fade-in">
+                <span className="font-oswald uppercase text-4xl italic sm:ml-20 animate-fade-in">
                     "Eternity is the sun mixed with the sea."
                 </span>
 
@@ -100,7 +100,7 @@ const SobrePage = () => {
                     </div>
                 </section>
 
-                <span className="text-white font-montserrat uppercase text-9xl p-10 my-8 text-center">
+                <span className="text-white font-montserrat uppercase text-6xl sm:text-9xl p-4 sm:p-10 my-8 text-center">
                     #GOSUN
                 </span>
             </div>
