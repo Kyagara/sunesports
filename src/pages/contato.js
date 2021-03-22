@@ -14,7 +14,7 @@ const ContatoPage = () => {
         <>
             <Layout pageTitle="Contato">
                 <Header headerTitle="Contato" />
-                <div className="relative p-8 min-h-screen font-openSans bg-gray-100">
+                <div className="relative flex flex-1 items-center justify-center p-8 min-h-screen font-openSans bg-gray-100">
                     <img
                         className="absolute h-full right-0 opacity-5"
                         src="sun-section.svg"

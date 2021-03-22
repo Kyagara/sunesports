@@ -11,13 +11,15 @@ const Footer = () => {
             <div className="flex flex-wrap max-w-6xl m-auto">
                 <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
                     <Link href="/">
-                        <img
-                            height="50%"
-                            width="50%"
-                            src="sun-white.svg"
-                            alt=""
-                            className="cursor-pointer"
-                        />
+                        <a>
+                            <img
+                                height="50%"
+                                width="50%"
+                                src="sun-white.svg"
+                                alt=""
+                                className="cursor-pointer"
+                            />
+                        </a>
                     </Link>
                 </div>
 

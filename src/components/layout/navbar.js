@@ -45,9 +45,9 @@ const Navbar = () => {
                 <div className="w-full flex flex-wrap items-center">
                     <div className="w-full flex justify-between items-center sm:w-auto">
                         <Link href="/">
-                            <span className="cursor-pointer text-xl hover:text-sun-yellow">
+                            <a className="cursor-pointer text-xl hover:text-sun-yellow">
                                 Sunlight Esports
-                            </span>
+                            </a>
                         </Link>
 
                         <span
