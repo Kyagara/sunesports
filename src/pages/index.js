@@ -11,7 +11,6 @@ import Discord from '../components/index/discord'
 const IndexPage = ({ twitter, instagram }) => {
     return (
         <Layout>
-            <div id="stars" />
             <div id="moving-stars" />
 
             <section className="flex justify-center overflow-hidden items-center min-h-screen">

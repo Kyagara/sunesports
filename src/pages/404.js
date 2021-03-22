@@ -9,7 +9,7 @@ const Error = () => {
                     className="max-h-96 opacity-25"
                     height="100%"
                     width="100%"
-                    src="sun-black.svg"
+                    src="/sun-black.svg"
                     alt=""
                 />
 

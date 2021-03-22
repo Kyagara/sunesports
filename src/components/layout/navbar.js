@@ -81,7 +81,7 @@ const Navbar = () => {
                                         </div>
 
                                         <div className="pl-2 pt-16 text-black font-medium">
-                                            <div className="mb-4 text-gray-500 text-xl">
+                                            <div className="mb-6 text-gray-500 text-xl">
                                                 Sunlight Esports
                                             </div>
                                             <div className="text-lg">
@@ -104,7 +104,7 @@ const Navbar = () => {
                                         </div>
 
                                         <div className="pl-2 pt-4 text-black font-medium">
-                                            <div className="mb-4 text-gray-500 text-xl">
+                                            <div className="mb-6 text-gray-500 text-xl">
                                                 Sobre
                                             </div>
                                             <div className="text-lg">

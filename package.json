@@ -9,26 +9,29 @@
     },
     "scripts": {
         "start": "next start",
-        "build": "next build && next export",
         "dev": "next dev",
-        "production": "node ./build/prebuild.js && next build && next export"
+        "prebuild": "node ./build/prebuild.js ",
+        "build": "next build && next export",
+        "postbuild": "next-sitemap --config ./build/sitemap-gen.js"
     },
     "dependencies": {
-        "autoprefixer": "^10.2.5",
+        "kwesforms": "^2.0.14",
+        "next": "10.0.6",
+        "next-seo": "^4.22.0",
+        "next-sitemap": "^1.6.9",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "react-icons": "^4.2.0"
+    },
+    "devDependencies": {
+        "@tailwindcss/jit": "^0.1.7",
         "axios": "^0.21.1",
         "dotenv": "^8.2.0",
         "js-yaml": "^4.0.0",
-        "kwesforms": "^2.0.14",
-        "next": "10.0.6",
-        "next-seo": "^4.20.0",
         "nprogress": "^0.2.0",
-        "postcss": "^8.2.8",
-        "react": "17.0.1",
-        "react-dom": "17.0.1",
-        "react-icons": "^4.2.0",
         "sass": "^1.32.8",
         "sharp": "^0.27.2",
-        "tailwindcss": "^2.0.3",
+        "tailwindcss": "^2.0.4",
         "twitter-api-client": "^1.3.2"
     }
 }

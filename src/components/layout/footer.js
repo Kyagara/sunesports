@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex flex-wrap max-w-6xl m-auto">
                 <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12">
                     <Link href="/">
-                        <a>
+                        <a aria-label="Sunesports">
                             <img
                                 height="50%"
                                 width="50%"
@@ -24,9 +24,9 @@ const Footer = () => {
                 </div>
 
                 <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12 font-lato text-gray-300 font-medium text-sm">
-                    <div className="text-xs uppercase text-gray-400 mb-6">
+                    <span className="text-xs uppercase text-gray-400 mb-6">
                         Sunlight Esports
-                    </div>
+                    </span>
 
                     <Link href="/">
                         <a className="my-3 block hover:text-gray-50 duration-300">
@@ -48,9 +48,9 @@ const Footer = () => {
                 </div>
 
                 <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12 font-lato text-gray-300 font-medium text-sm">
-                    <div className="text-xs uppercase text-gray-400 mb-6">
+                    <span className="text-xs uppercase text-gray-400 mb-6">
                         Sobre
-                    </div>
+                    </span>
 
                     <Link href="/quem-somos">
                         <a className="my-3 block hover:text-gray-50 duration-300">
@@ -110,10 +110,7 @@ const Footer = () => {
                     border-t border-gray-500 text-gray-400 text-sm 
                     flex-col md:flex-row max-w-6xl justify-center"
                 >
-                    <div>
-                        Sunlight Esports 2020-2020 ® Todos os Direitos
-                        Reservados
-                    </div>
+                    <span>#GOSUN</span>
                 </div>
             </div>
         </footer>

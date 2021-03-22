@@ -14,26 +14,22 @@ const SobrePage = () => {
                 </span>
 
                 <section className="flex flex-1">
-                    <div className="flex flex-1 flex-col p-4 gap-4 items-start justify-center">
+                    <div className="flex flex-1 flex-col p-4 gap-4 items-start justify-center text-lg">
                         <span className="font-montserrat uppercase text-4xl">
                             Missão
                         </span>
-                        <p className="text-lg">
+                        <p>
                             Fazer parte da Sunlight Esports significa ter a
                             liberdade para seguir seu próprio caminho e não ser
                             limitado a seguir padrões ou suprir expectativas
-                            externas.
-                            <p>
-                                Seja você um dos nossos fãs ou esteja disputando
-                                uma vaga para fazer parte de nossa organização,
-                                sempre iremos escolher dedicação, foco e paixão
-                                pela causa acima de rótulos. Sempre pautamos
-                                nossas decisões buscando o que é certo, mesmo
-                                que não nos beneficie diretamente. A nossa
-                                missão é inspirar todos os jogadores a competir,
-                                independente da sua situação. Há espaço para
-                                todos.
-                            </p>
+                            externas. Seja você um dos nossos fãs ou esteja
+                            disputando uma vaga para fazer parte de nossa
+                            organização, sempre iremos escolher dedicação, foco
+                            e paixão pela causa acima de rótulos. Sempre
+                            pautamos nossas decisões buscando o que é certo,
+                            mesmo que não nos beneficie diretamente. A nossa
+                            missão é inspirar todos os jogadores a competir,
+                            independente da sua situação. Há espaço para todos.
                         </p>
                     </div>
                 </section>
@@ -43,11 +39,11 @@ const SobrePage = () => {
                 </span>
 
                 <section>
-                    <div className="flex flex-1 flex-col p-4 gap-4 items-start justify-center">
+                    <div className="flex flex-1 flex-col p-4 gap-4 items-start justify-center text-lg">
                         <span className="font-montserrat uppercase text-4xl">
                             Valores
                         </span>
-                        <p className="text-lg">
+                        <p>
                             Buscamos estar em constante desenvolvimento. Nossos
                             padrões de qualidade se tornam mais rígidos junto a
                             nossa caminhada, buscando a excelência das nossas
@@ -75,11 +71,11 @@ const SobrePage = () => {
                 </span>
 
                 <section>
-                    <div className="flex flex-1 flex-col p-4 gap-4 items-start justify-center">
+                    <div className="flex flex-1 flex-col p-4 gap-4 items-start justify-center text-lg">
                         <span className="font-montserrat uppercase text-4xl">
                             Futuro
                         </span>
-                        <p className="text-lg">
+                        <p>
                             Desde que foi fundada em Fevereiro de 2020, a única
                             certeza que seus criadores tinham em relação a
                             Sunlight era que, independente de como as coisas

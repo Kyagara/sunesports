@@ -7,7 +7,12 @@
 # o/
 
 
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://sunesports.com.br
+
+# Sitemaps
 Sitemap: https://sunesports.com.br/sitemap.xml

@@ -32,9 +32,8 @@ const ContatoPage = () => {
                                         <AiOutlineWhatsApp />
                                         (71) 98234-1420
                                     </span>
-                                    <span className="hover:text-gray-400">
+                                    <span className="hover:text-gray-600">
                                         <a
-                                            target="_blank"
                                             href="mailto:contato@sunesports.com.br"
                                             aria-label="Email"
                                             rel="noopener"
