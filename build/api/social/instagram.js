@@ -1,7 +1,7 @@
 const fs = require('fs')
 const axios = require('axios')
 const sharp = require('sharp')
-const { YamlParser } = require('../../YamlParser')
+const { YamlParser } = require('../../yamlParser')
 sharp.cache(false)
 
 async function Instagram() {

@@ -53,9 +53,12 @@ const SobrePage = () => {
                             sutis ou ousadas, acreditamos que a vitória está no
                             aprendizado, no preparo, no companheirismo, e no ato
                             de competir, acima de tudo, não somente em
-                            resultados. Desde que começamos nossas atividades,
-                            fizemos movimentos que foram em sentido contrário ao
-                            que nossos oponentes acreditavam, dentro e fora de
+                            resultados.
+                        </p>
+                        <p>
+                            Desde que começamos nossas atividades, fizemos
+                            movimentos que foram em sentido contrário ao que
+                            nossos oponentes acreditavam, dentro e fora de
                             campo. Sabemos dos riscos das nossas estratégias e
                             como elas podem aumentar nossa oportunidade de
                             vencer e evoluir. Nos bastidores de cada objetivo

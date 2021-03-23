@@ -1,5 +1,5 @@
 const twitterAPI = require('twitter-api-client')
-const { YamlParser } = require('../../YamlParser')
+const { YamlParser } = require('../../yamlParser')
 
 async function Twitter() {
     console.log('Autenticando usuário do Twitter.')
@@ -62,6 +62,8 @@ async function Twitter() {
     })
 
     const removeStr = [
+        'https://twitter.com/sunesportsbr/status/1373698025743339521',
+        'https://twitter.com/sunesportsbr/status/1373702795044487173',
         'https://twitter.com/sunesportsbr/status/1365633399772352517',
         'https://twitter.com/sunesportsbr/status/1371137910863446027',
         'https://twitter.com/sunesportsbr/status/1368253463914811396',

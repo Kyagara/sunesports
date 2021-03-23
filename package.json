@@ -1,6 +1,6 @@
 {
     "name": "sunesports",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "description": "Site da Sunlight Esports.",
     "private": true,
     "author": {
@@ -12,7 +12,8 @@
         "dev": "next dev",
         "prebuild": "node ./build/prebuild.js ",
         "build": "next build && next export",
-        "postbuild": "next-sitemap --config ./build/sitemap-gen.js"
+        "postbuild": "next-sitemap --config ./build/sitemap-gen.js",
+        "test": "next build && next export"
     },
     "dependencies": {
         "kwesforms": "^2.0.14",
