@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import Layout from '../components/pageLayout'
 
 import Header from '../components/layout/header'
 
@@ -27,9 +27,12 @@ const SobrePage = () => {
                             organização, sempre iremos escolher dedicação, foco
                             e paixão pela causa acima de rótulos. Sempre
                             pautamos nossas decisões buscando o que é certo,
-                            mesmo que não nos beneficie diretamente. A nossa
-                            missão é inspirar todos os jogadores a competir,
-                            independente da sua situação. Há espaço para todos.
+                            mesmo que não nos beneficie diretamente.
+                        </p>
+                        <p>
+                            A nossa missão é inspirar todos os jogadores a
+                            competir, independente da sua situação. Há espaço
+                            para todos.
                         </p>
                     </div>
                 </section>
@@ -61,10 +64,13 @@ const SobrePage = () => {
                             nossos oponentes acreditavam, dentro e fora de
                             campo. Sabemos dos riscos das nossas estratégias e
                             como elas podem aumentar nossa oportunidade de
-                            vencer e evoluir. Nos bastidores de cada objetivo
-                            alcançado, tem um time de pessoas empenhadas, que
-                            abdicam de coisas em prol de um objetivo em comum,
-                            competir em alto nível.
+                            vencer e evoluir.
+                        </p>
+                        <p>
+                            Nos bastidores de cada objetivo alcançado, tem um
+                            time de pessoas empenhadas, que abdicam de coisas em
+                            prol de um objetivo em comum, competir em alto
+                            nível.
                         </p>
                     </div>
                 </section>
@@ -84,17 +90,22 @@ const SobrePage = () => {
                             Sunlight era que, independente de como as coisas
                             viriam a se desenvolver, não iremos progredir rumo a
                             um ambiente engessado, onde as pessoas seriam
-                            privadas de serem autênticas. Temos muito orgulho do
-                            trabalho que realizamos no último ano, e temos dado
-                            passos expressivos para nossa história. Refletimos
-                            muito durante esse curto trajeto, e aprendemos
-                            bastante com as conquistas de pessoas de outros
-                            pores do sol. Já quando pensamos no futuro,
-                            aproveitamos da amplitude desses conhecimentos, e
-                            nos damos a missão de reinventá-los nos próximos
-                            nasceres do sol. A Sunlight Esports é um projeto que
-                            representa esperança e liberdade, e prezamos isso
-                            acima de tudo.
+                            privadas de serem autênticas.
+                        </p>
+                        <p>
+                            Temos muito orgulho do trabalho que realizamos no
+                            último ano, e temos dado passos expressivos para
+                            nossa história. Refletimos muito durante esse curto
+                            trajeto, e aprendemos bastante com as conquistas de
+                            pessoas de outros pores do sol. Já quando pensamos
+                            no futuro, aproveitamos da amplitude desses
+                            conhecimentos, e nos damos a missão de reinventá-los
+                            nos próximos nasceres do sol.
+                        </p>
+                        <p>
+                            A Sunlight Esports é um projeto que representa
+                            esperança e liberdade, e prezamos isso acima de
+                            tudo.
                         </p>
                     </div>
                 </section>

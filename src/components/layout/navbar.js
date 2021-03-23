@@ -22,10 +22,10 @@ const Navbar = () => {
         !header.classList.toggle('header-background', scrollTop >= 10)
     }
 
-    const resetWindowScrollPosition = useCallback(
-        () => window.scrollTo(0, 0),
-        [],
-    )
+    const resetWindowScrollPosition = useCallback(() => {
+        setNavOpen(!navOpen)
+        return window.scrollTo(0, 0)
+    }, [])
 
     useEffect(() => {
         document.addEventListener('scroll', handleScroll)

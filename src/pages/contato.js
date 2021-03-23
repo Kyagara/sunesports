@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import kwesforms from 'kwesforms'
 
-import Layout from '../components/layout'
+import Layout from '../components/pageLayout'
 import Header from '../components/layout/header'
 import { AiFillMail, AiOutlineWhatsApp } from 'react-icons/ai'
 

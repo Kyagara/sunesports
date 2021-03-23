@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import yaml from 'js-yaml'
 
-import Layout from '../components/layout'
+import Layout from '../components/pageLayout'
 
 import Inicio from '../components/index/inicio'
 import Social from '../components/index/social'

@@ -66,7 +66,7 @@ const Footer = () => {
                 </div>
 
                 <div className="p-5 w-1/2 sm:w-4/12 md:w-3/12 font-lato text-gray-300 font-medium text-sm">
-                    <div className="text-xs uppercase text-gray-400 mb-6">
+                    <div className="text-xs uppercase text-gray-400 mb-4">
                         Redes Sociais
                     </div>
 
@@ -75,9 +75,9 @@ const Footer = () => {
                         href="https://twitter.com/sunesportsbr"
                         aria-label="Twitter"
                         rel="noopener"
-                        className="my-3 flex flex-row items-center hover:text-gray-50 duration-300"
+                        className="my-2 flex flex-row items-center hover:text-gray-50 duration-300"
                     >
-                        <AiFillTwitterSquare className="text-base my-0 mr-1" />
+                        <AiFillTwitterSquare className="text-base mr-1" />
                         Twitter
                     </a>
 
