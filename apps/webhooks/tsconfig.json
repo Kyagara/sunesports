@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ESNext"
+        ],
+        "module": "CommonJS",
+        "target": "ESNext",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "isolatedModules": false
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "extends": "@sunesports/tsconfig/base.json",
+    "include": [
+        "src"
+    ]
+}

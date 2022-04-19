@@ -1,0 +1,31 @@
+{
+    "name": "@sunesports/radio",
+    "version": "1.0.0",
+    "description": "Bot de rádio de Discord.",
+    "repository": "github:Kyagara/sunesports",
+    "author": "Kyagara",
+    "license": "MIT",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./src/index.js",
+        "dev": "nodemon ./src/index.js",
+        "lint": "eslint src",
+        "clean": "rm -rf .turbo && rm -rf node_modules"
+    },
+    "dependencies": {
+        "@discordjs/builders": "^0.13.0",
+        "eslint": "^8.13.0",
+        "@discordjs/opus": "^0.7.0",
+        "@discordjs/rest": "^0.4.1",
+        "@discordjs/voice": "^0.9.0",
+        "chalk": "^4.1.2",
+        "discord.js": "^13.6.0",
+        "dotenv": "^16.0.0",
+        "enmap": "^5.9.0",
+        "libsodium-wrappers": "^0.7.10",
+        "ytdl-core": "^4.11.0",
+        "ytdl-core-discord": "^1.3.1"
+    }
+}
+

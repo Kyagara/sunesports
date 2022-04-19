@@ -1,0 +1,31 @@
+{
+    "name": "@sunesports/webhooks",
+    "version": "1.0.0",
+    "description": "Webhooks de redes sociais.",
+    "private": true,
+    "repository": "github:Kyagara/sunesports",
+    "author": "Kyagara",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./dist/index.js",
+        "dev": "nodemon ./src/index.ts",
+        "lint": "eslint src",
+        "build": "tsc",
+        "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    },
+    "dependencies": {
+        "fastify": "^3.28.0",
+        "axios": "^0.26.1",
+        "dotenv": "^16.0.0"
+    },
+    "devDependencies": {
+        "@sunesports/config": "*",
+        "@sunesports/tsconfig": "*",
+        "@types/node": "^17.0.25",
+        "eslint": "^8.13.0",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.3"
+    }
+}
+

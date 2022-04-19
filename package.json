@@ -1,0 +1,30 @@
+{
+    "name": "sunesports",
+    "version": "1.0.0",
+    "description": "Monorepo da Sunlight Esports.",
+    "homepage": "https://sunesports.com.br",
+    "repository": "github:Kyagara/sunesports",
+    "author": "Kyagara",
+    "license": "MIT",
+    "private": true,
+    "workspaces": ["apps/*", "packages/*"],
+    "scripts": {
+        "start": "turbo run start",
+        "build": "turbo run build",
+        "dev": "turbo run dev --parallel",
+        "lint": "turbo run lint",
+        "format": "prettier --write \"**/*.{js,ts,tsx,md}\" --config .prettierrc",
+        "clean": "turbo run clean && rm -rf node_modules"
+    },
+    "devDependencies": {
+        "prettier": "^2.5.1",
+        "turbo": "^1.1.6",
+        "nodemon": "^2.0.15"
+    },
+    "engines": {
+        "npm": ">=7.0.0",
+        "node": ">=14.0.0"
+    },
+    "packageManager": "yarn@1.22.15"
+}
+

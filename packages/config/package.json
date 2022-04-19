@@ -1,0 +1,16 @@
+{
+    "name": "@sunesports/config",
+    "version": "1.0.0",
+    "description": "Pacote com configurações compartilháveis como a configuração de eslint.",
+    "private": true,
+    "files": ["eslint-preset.js"],
+    "dependencies": {
+        "eslint": "^8.12.0",
+        "eslint-config-next": "^12.1.5",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-react": "^7.29.4"
+    },
+    "devDependencies": {
+        "typescript": "^4.6.2"
+    }
+}

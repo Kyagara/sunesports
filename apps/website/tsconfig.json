@@ -1,0 +1,29 @@
+{
+    "extends": "@sunesports/tsconfig/nextjs.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist",
+        "baseUrl": "src",
+        "paths": {
+            "@/*": [
+                "*"
+            ]
+        },
+    },
+    "ts-node": {
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "transpileOnly": true,
+        "files": true,
+        "compilerOptions": {
+            "module": "CommonJS"
+        },
+    },
+    "include": [
+        "src",
+        "next-env.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+}

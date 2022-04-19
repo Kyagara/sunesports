@@ -1,0 +1,40 @@
+// https://codepen.io/Glucio/pen/BoLWPo
+
+@function multiple-box-shadow($n) {
+    $value: '#{random(2000)}px #{random(4000)}px #FFF';
+    @for $i from 2 through $n {
+        $value: '#{$value} , #{random(2000)}px #{random(4000)}px #FFF';
+    }
+    @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(600);
+
+#moving-stars {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStar 50s linear infinite;
+
+    &:after {
+        content: ' ';
+        overflow: hidden;
+        top: 2000px;
+        width: 1px;
+        height: 1px;
+        background: transparent;
+        box-shadow: $shadows-small;
+    }
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}

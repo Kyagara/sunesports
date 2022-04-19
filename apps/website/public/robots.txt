@@ -1,0 +1,18 @@
+#    _  _   ____  _   _ _   _
+#  _| || |_/ ___|| | | | \ | |
+# |_  ..  _\___ \| | | |  \| |
+# |_  ..  _|___) | |_| | |\  |
+#   |_||_| |____/ \___/|_| \_|
+#
+# o/
+
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sunesports.com.br
+
+# Sitemaps
+Sitemap: https://sunesports.com.br/sitemap.xml
